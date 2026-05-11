@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Growth of GDP vs. CO2 Emissions in Malaysia (1990-2024)",
+    "anchor": "start",
+    "fontSize": 16
+  },
+  "width": 1500,
+  "height": 500,
+  "data": {
+    "url": "data/co2-emissions-and-gdp.csv"
+  },
+  "transform": [
+    {
+      "fold": ["Increase in National GDP", "Increase in CO2 emissions"],
+      "as": ["Growth Metric", "Percentage Increase"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true, "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "Year", 
+          "type": "temporal", 
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "Percentage Increase", 
+          "type": "quantitative", 
+          "title": "Percentage Increase (%)"
+        },
+        "color": {
+          "field": "Growth Metric",
+          "type": "nominal",
+          "scale": {"range": ["#1f77b4", "#ff7f0e"]},
+          "legend": {"orient": "bottom", "title": "Growth Metrics"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "temporal"},
+          {"field": "Growth Metric", "type": "nominal"},
+          {"field": "Percentage Increase", "type": "quantitative", "format": ".2f"}
+        ]
+      }
+    }
+  ]
+}
