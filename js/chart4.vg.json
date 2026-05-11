@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A streamgraph showing pollutant gas emissions from 1750 to 2022.",
+  "width": 1500,
+  "height": 500,
+  "title": {
+    "text": "Global Pollutant Gas Emissions (1750-2022)",
+    "subtitle": "Streamgraph showing the volume and composition of emissions over time",
+    "anchor": "start",
+    "fontSize": 18
+  },
+  "data": {
+    "url": "data/emissions_final_fixed.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Ammonia",
+        "Black carbon",
+        "Carbon monoxide",
+        "Methane",
+        "Nitrogen oxides",
+        "Nitrous oxide",
+        "Non-methane volatile organic compounds",
+        "Organic carbon",
+        "Sulfur dioxide",
+        "Fine particulate matter"
+      ],
+      "as": ["Gas_Type", "Emission_Value"]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+    "field": "Year",
+    "type": "quantitative",
+    "title": "Year",
+    "axis": {
+        "domain": false,
+        "grid": false,
+        "format": "d",
+        "tickCount": 10
+        }   
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Emission_Value",
+      "type": "quantitative",
+      "title": "Emission Volume",
+      "stack": "center",
+      "axis": null
+    },
+    "color": {
+      "field": "Gas_Type",
+      "title": "Pollutant Gas",
+      "scale": {"scheme": "category20b"}
+    },
+    "opacity": {
+      "condition": {"param": "hover", "value": 1},
+      "value": 0.3
+    },
+    "tooltip": [
+      {"field": "Year", "type": "quantitative"},
+      {"field": "Gas_Type", "type": "nominal", "title": "Pollutant"},
+      {"field": "Emission_Value", "type": "quantitative", "title": "Amount", "format": ",.2f"}
+    ]
+  },
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Gas_Type"],
+        "on": "mouseover"
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null}
+  }
+}
