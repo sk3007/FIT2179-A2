@@ -1,7 +1,7 @@
-var chart1 = "js/chart1.vg.json";
+var chart1 = "charts/chart1.vg.json";
 
-var chart3 = "js/chart3.vg.json";
-var chart4 = "js/chart4.vg.json";
+var chart3 = "charts/chart3.vg.json";
+var chart4 = "charts/chart4.vg.json";
  
 vegaEmbed('#chart1', chart1).then(function(result) {
 }).catch(console.error);
