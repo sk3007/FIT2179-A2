@@ -4,7 +4,7 @@
   "width": 1500,
   "height": 500,
   "data": {
-    "url": "data/_202301311005090_2021_pm_423-keluasan-guna-tanah-mengikut-negeri.csv"
+    "url": "data/land_use_area.csv"
   },
   "params": [
     {
