@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Temperature Anomaly Across Decades",
+    "subtitle": "Monthly anomalies relative to 1950-1960 baseline",
+    "anchor": "start",
+    "fontSize": 16
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "data/viz6(1).csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "2010-2020",
+        "2000-2010",
+        "1990-2000",
+        "1980-1990",
+        "1970-1980",
+        "1960-1970",
+        "1950-1960"
+      ],
+      "as": ["Decade", "Anomaly"]
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "tooltip": true,
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "Decade",
+      "type": "ordinal",
+      "title": "Decade",
+      "sort": [
+        "1950-1960",
+        "1960-1970",
+        "1970-1980",
+        "1980-1990",
+        "1990-2000",
+        "2000-2010",
+        "2010-2020"
+      ],
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "Month",
+      "type": "ordinal",
+      "title": "Month",
+      "sort": [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+      ]
+    },
+    "color": {
+      "field": "Anomaly",
+      "type": "quantitative",
+      "title": "Anomaly (°C)",
+      "scale": {
+        "scheme": "redyellowblue",
+        "reverse": true,
+        "domainMid": 0
+      },
+      "legend": {
+        "direction": "vertical",
+        "gradientLength": 200
+      }
+    },
+    "tooltip": [
+      {"field": "Decade", "type": "nominal"},
+      {"field": "Month", "type": "nominal"},
+      {"field": "Anomaly", "type": "quantitative", "format": ".2f", "title": "Anomaly (°C)"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": false,
+      "domain": false
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
