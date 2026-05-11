@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Temperature Anomaly Across Decades",
-    "subtitle": "Monthly anomalies relative to 1950-1960 baseline",
+    "text": "Number of Days with Heat Index > 35°C",
+    "subtitle": "Monthly anomalies relative to 1990-2000 baseline",
     "anchor": "start",
     "fontSize": 16
   },
@@ -59,7 +59,7 @@
     "color": {
       "field": "Anomaly",
       "type": "quantitative",
-      "title": "Anomaly (°C)",
+      "title": "Anomaly (Number of Days)",
       "scale": {
         "scheme": "redyellowblue",
         "reverse": true,
