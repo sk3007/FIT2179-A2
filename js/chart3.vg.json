@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked area chart of land usage in Malaysia by State.",
+  "width": 1500,
+  "height": 500,
+  "data": {
+    "url": "data/_202301311005090_2021_pm_423-keluasan-guna-tanah-mengikut-negeri.csv"
+  },
+  "params": [
+    {
+      "name": "Select_State",
+      "value": "Malaysia",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Malaysia",
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Pulau Pinang",
+          "Perak",
+          "Perlis",
+          "Selangor",
+          "Terengganu",
+          "Kuala Lumpur",
+          "Putrajaya"
+        ],
+        "name": "View State: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.State == Select_State"
+    },
+    {
+      "fold": [
+        "Water Body",
+        "Forest",
+        "Industrial",
+        "Infrastructure and Utilities",
+        "Social Institutions and Facilities",
+        "Commercial",
+        "Beach",
+        "Mixed Development",
+        "Transport",
+        "Farming",
+        "Residential",
+        "Empty Land",
+        "Recreational Space"
+      ],
+      "as": ["Usage_Type", "Area_Amount"]
+    }
+  ],
+  "title": {
+    "text": {
+      "signal": "'Land Usage Trends in ' + Select_State"
+    },
+    "anchor": "start",
+    "fontSize": 18
+  },
+  "mark": {
+    "type": "area",
+    "line": true,
+    "point": true,
+    "tooltip": true,
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {
+      "field": "Area_Amount",
+      "type": "quantitative",
+      "title": "Area Size",
+      "stack": "zero"
+    },
+    "color": {
+      "field": "Usage_Type",
+      "type": "nominal",
+      "title": "Land Category",
+      "scale": {"scheme": "tableau20"}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal"},
+      {"field": "Usage_Type", "type": "nominal", "title": "Category"},
+      {"field": "Area_Amount", "type": "quantitative", "title": "Area", "format": ",.2f"}
+    ]
+  }
+}
