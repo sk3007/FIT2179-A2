@@ -1,57 +1,119 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Warming stripes chart showing mean surface air temperature from 1950 to 2024.",
-  "title": {
-    "text": "Average Mean Surface Air Temperature (1950-2024)",
-    "subtitle": "Strip chart showing the warming trend over time",
-    "anchor": "start",
-    "fontSize": 16
-  },
+  "description": "Bubble chart showing relationship between temperature, precipitation, and sea level change.",
   "width": 800,
-  "height": 200,
-  "data": {
-    "url": "data/viz6.csv"
+  "height": 500,
+  "title": {
+    "text": "Temperature, Precipitation, and Sea Level Trends (1992-2024)",
+    "subtitle": "Bubble Size = Annual Precipitation | Color = Sea Level Change",
+    "anchor": "start",
+    "fontSize": 18
   },
-  "mark": {
-    "type": "rect",
-    "tooltip": true
-  },
-  "encoding": {
-    "x": {
-      "field": "Category",
-      "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "values": ["1950", "1960", "1970", "1980", "1990", "2000", "2010", "2020"],
-        "labelAngle": -45
+  "layer": [
+        {
+      "data": { "url": "data/viz2.csv" },
+      "transform": [
+        { "calculate": "parseFloat(datum.Date) + (1/12)", "as": "Date_end" }
+      ],
+      "mark": { "type": "rect", "opacity": 0.15, "clip": false },
+      "encoding": {
+        "x": { "field": "Date", "type": "quantitative", "title": "Year" },
+        "x2": { "field": "Date_end" },
+        "y": { "value": 0 },
+        "y2": { "value": 500 },
+        "color": {
+          "field": "ONI Type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["El Niño", "ENSO Neutral", "La Niña"],
+            "range": ["#e45756", "#cccccc", "#4f86f7"]
+          },
+          "legend": { "title": "ENSO Phase" }
+        }
       }
     },
-    "color": {
-      "field": "Average Mean Surface Air Temperature (°C)",
-      "type": "quantitative",
-      "title": "Temp (°C)",
-      "scale": {
-        "scheme": "redblue",
-        "reverse": true,
-        "domainMid": 25.3
-      },
-      "legend": {
-        "orient": "right",
-        "title": "Temperature (°C)"
-      }
-    },
-    "tooltip": [
-      {"field": "Category", "type": "ordinal", "title": "Year"},
-      {
-        "field": "Average Mean Surface Air Temperature (°C)",
-        "type": "quantitative",
-        "title": "Mean Temp",
-        "format": ".2f"
-      }
-    ]
-  },
+    {
+        "data": {
+            "url": "data/viz6.csv"
+        },
+        "mark": {
+            "type": "circle",
+            "opacity": 0.7,
+            "stroke": "black",
+            "strokeWidth": 0.5
+        },
+        "encoding": {
+            "x": {
+            "field": "Category",
+            "type": "quantitative",
+            "title": "Year",
+            "axis": {
+                "format": "d",
+                "tickCount": 10
+            },
+            "scale": {
+                "zero": false
+            }
+            },
+            "y": {
+            "field": "Average Mean Surface Air Temperature (°C)",
+            "type": "quantitative",
+            "title": "Mean Surface Temp (°C)",
+            "scale": {
+                "zero": false,
+                "padding": 20
+            }
+            },
+            "size": {
+            "field": "Sea Level Change",
+            "type": "quantitative",
+            "title": "Sea Level Rise (mm)",
+            "scale": {
+                "type": "linear",
+                "range": [20, 1000]
+            }
+            
+            },
+            "color": {
+            "field": "Annual Precipitation",
+            "type": "quantitative",
+            "title": "Precipitation (mm)",
+            "scale": {
+                "zero": false,
+                "scheme": "darkblue",
+                "reverse": true
+            }
+            },
+            "tooltip": [
+            {
+                "field": "Category",
+                "type": "quantitative",
+                "title": "Year"
+            },
+            {
+                "field": "Average Mean Surface Air Temperature (°C)",
+                "type": "quantitative",
+                "title": "Temperature (°C)"
+            },
+            {
+                "field": "Annual Precipitation",
+                "type": "quantitative",
+                "title": "Precipitation (mm)"
+            },
+            {
+                "field": "Sea Level Change",
+                "type": "quantitative",
+                "title": "Sea Level Change (mm)",
+                "format": ".2f"
+            }
+            ]
+        }
+    }
+  ],
   "config": {
-    "view": {"stroke": null},
-    "axis": {"domain": false, "ticks": false, "labelPadding": 10}
-  }
+        "axis": {
+        "grid": true,
+        "gridOpacity": 0.4
+        }
+    }
 }
