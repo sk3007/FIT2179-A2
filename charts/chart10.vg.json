@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Consume Price Index vs. Number of Hot Days (T-max > 30°C)",
+    "subtitle": "Colour indicates crop yield (tonnes per hectare)"
+  },
+  "width": 700,
+  "height": 450,
+  "data": {
+    "url": "data/observed-timeseries-of-a.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 150
+      },
+      "encoding": {
+        "x": {
+          "field": "Number of Hot Days (T-max > 30°C) (days)",
+          "type": "quantitative",
+          "title": "Number of Hot Days (T-max > 30°C) (days)"
+        },
+        "y": {
+          "field": "CPI",
+          "type": "quantitative",
+          "title": "Consumer Price Index (CPI)"
+        },
+        "color": {
+          "field": "Crop Yield (Tonnes)",
+          "type": "quantitative",
+          "scale": { "scheme": "greens" },
+          "title": "Crop Yield (Tonnes per Hectare)"
+        },
+        "tooltip": [
+          { "field": "Year", "type": "ordinal" },
+          { "field": "Production Per Area (Tonnes per Hectare)", "type": "quantitative", "format": ".2f" },
+          { "field": "Number of Dengue Infections", "type": "quantitative" },
+          { "field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative", "format": ".1f" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "CPI",
+          "on": "Number of Hot Days (T-max > 30°C) (days)"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "steelblue",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "Number of Hot Days (T-max > 30°C) (days)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "CPI",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}
