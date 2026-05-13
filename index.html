@@ -8,6 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="js/chart_embed.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"> </script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="js/chart_treemap.js"></script>
+
     <title>FirstVega-Litegraph</title>
 </head>
 
@@ -23,6 +29,12 @@
         <div id="chart10"></div>
         <div id="chart13"></div>
         <div id="chart14"></div>
+        <div id="chart_treemap"></div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.initTreemap('chart_treemap');
+        });
+        </script>
     </div>
     
 </body>
