@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Malaysia Energy Supply with Renewable Share",
+  "description": "Interactive Pie Chart showing Renewable vs Non-Renewable Energy proportions.",
+  "width": 200,
+  "height": 300,
+  "data": {
+    "url": "data/Primary_Energy_Supply_by_Fuel_Type.csv"
+  },
+  "params": [
+    {
+      "name": "YearSlider",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1978,
+        "max": 2022,
+        "step": 2,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.Year == YearSlider"
+    },
+    {
+      "calculate": "datum['Renewables - Biodiesel'] + datum['Renewables - Biogas'] + datum['Renewables - Biomass'] + datum['Renewables - Hydro Power'] + datum['Renewables - Solar']",
+      "as": "Total Renewable"
+    },
+    {
+      "calculate": "datum['Crude Oil & Petroleum Product'] + datum['Natural Gas'] + datum['Coal & Coke'] + (datum.Others || 0)",
+      "as": "Total Non-Renewable"
+    },
+    {
+      "fold": ["Total Renewable", "Total Non-Renewable"],
+      "as": ["Energy_Type", "Value"]
+    }
+  ],
+  "mark": {"type": "arc", "innerRadius": 60, "stroke": "#fff"},
+  "encoding": {
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {
+      "field": "Energy_Type",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Total Renewable", "Total Non-Renewable"],
+        "range": ["#2ca02c", "#d62728"]
+      },
+      "legend": {"title": "Energy Source"}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "quantitative"},
+      {"field": "Energy_Type", "type": "nominal", "title": "Type"},
+      {"field": "Value", "type": "quantitative", "title": "Amount (ktoe)", "format": ","}
+    ]
+  }
+}

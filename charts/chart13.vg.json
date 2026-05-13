@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Malaysia Renewable Energy Supply by Fuel Type ",
+  "height": 300,
+  "data": { "url": "data/Primary_Energy_Supply_by_Fuel_Type.csv" },
+  "transform": [
+    {
+      "fold": [
+        "Renewables - Biodiesel",
+        "Renewables - Biogas",
+        "Renewables - Biomass",
+        "Renewables - Hydro Power",
+        "Renewables - Solar"
+      ],
+      "as": ["Fuel Type", "Supply"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "axis": { "labelAngle": -45 }
+        },
+        "y": {
+          "field": "Supply",
+          "type": "quantitative",
+          "title": "Proportion of Total Supply"
+        },
+        "color": {
+          "field": "Fuel Type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Renewables - Biodiesel",
+              "Renewables - Biogas",
+              "Renewables - Biomass",
+              "Renewables - Hydro Power",
+              "Renewables - Solar"
+            ],
+            "range": [  
+              "#006400",  
+              "#228B22",  
+              "#32CD32",  
+              "#66CDAA",  
+              "#9ACD32"
+            ]
+          }
+        },
+        "tooltip": [
+          { "field": "Year" },
+          { "field": "Fuel Type" },
+          { "field": "Supply" }
+        ]
+      }
+    }
+  ]
+}
