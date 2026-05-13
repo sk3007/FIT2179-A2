@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A streamgraph showing pollutant gas emissions from 1750 to 2022.",
-  "width": 1500,
+  "width": 1200,
   "height": 500,
   "title": {
     "text": "Global Pollutant Gas Emissions (1750-2022)",

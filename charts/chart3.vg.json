@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Stacked area chart of land usage in Malaysia by State.",
-  "width": 1500,
+  "width": 1200,
   "height": 500,
   "data": {
     "url": "data/land_use_area.csv"
