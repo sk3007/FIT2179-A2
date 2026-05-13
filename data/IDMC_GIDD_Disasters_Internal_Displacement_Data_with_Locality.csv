@@ -1,0 +1,541 @@
+Country / Territory,Year,Event Name,Disaster Internal Displacements (Raw),Hazard Category,Hazard Type,Hazard Sub Type,locality,Longtitude,Latitude
+Malaysia,2010,Malaysia: Flood - 01/01/2010,24000,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2010,Malaysia: Flood - 01/01/2010,41000,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2011,Malaysia: Flood - 01/01/2011,24000,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2012,Malaysia: Flood - 01/01/2012,22000,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2013,"Pahang, terengganu and johor flood",42626,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2014,Cameron highland flash flood,177,Weather related,Flood,Flood,Cameron Highlands,101.3801,4.4716
+Malaysia,2014,Western coast flood,436,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2014,North-east states flood,4756,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2014,East coast floods,247104,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2015,Hulu selangor landslide,38,Weather related,Mass Movement,Landslide/Wet mass movement,Hulu Selangor,101.6508,3.5656
+Malaysia,2015,Terengganu floods,199,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2015,Perak flood,367,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2015,Perlis and kedah floods,438,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2015,"Floods in sabah, perak, sarawak, pahang, kedah states",1421,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2015,"Floods in johor, malacca, negeri sembilan, selangor, and perak states",3000,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2016,Malaysia: Floods - Multiple States - 01/02/2016 (1st wave),9625,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2016,Malaysia: Floods - Multiple Locations - 27/02/2016,631,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2016,Malaysia: Floods - Penang and Kedah - 17/07/2016,471,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2016,Malaysia: Floods - Johor - 01/01/2016,132,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2016,Malaysia: Floods - Northwest Peninsula - 19/09/2016,1140,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2016,Terengganu floods,112,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2016,Malaysia: East Coast Monsoon - 26/12/2016,6000,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2016,Indonesia: Floods - Terengganu - 28/11/2016,330,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2017,Malaysia: Storm - Johor - 15/11/2017,5,Weather related,Storm,Storm,Johor Bahru,103.7414,1.4927
+Malaysia,2017,Malaysia: Floods - Perlis - 28/11/2017,156,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2017,Malaysia: Floods - Perak - 30/11/2017,1198,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2017,Malaysia: Floods - Pahang - 02/03/2017,206,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2017,Gombak Flash Floods,191,Weather related,Flood,Flood,Gombak,101.6667,3.2667
+Malaysia,2017,Perak and Selangor Floods (Apr 24-30),186,Weather related,Flood,Flood,Apr 24-30,101.5901,3.109
+Malaysia,2017,Malaysia: Floods - Perak - 02/05/2017,129,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2017,Temerloh Floods,959,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2017,Malaysia: Floods - Ipoh - 11/05/2017,400,Weather related,Flood,Flood,Ipoh,101.0829,4.5841
+Malaysia,2017,Malaysia: Flash Flood - Selangor and Perak - 17/06/2017,446,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2017,Malaysia: Floods - Melaka - 26/06/2017,200,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2017,"China, Malaysia, Philippines, Thailand, VietNam: Typhoon Doksuri - 11/9/2017",850,Weather related,Storm,Typhoon/Hurricane/Cyclone,Unknown/National,102.2428,3.9559
+Malaysia,2017,Melaka floods (August 2017),1179,Weather related,Flood,Flood,17-Aug,102.2341,2.2289
+Malaysia,2017,Johor floods (August 2017),213,Weather related,Flood,Flood,17-Aug,102.2341,2.2289
+Malaysia,2017,Perak floods (August 2017),65,Weather related,Flood,Flood,17-Aug,102.2341,2.2289
+Malaysia,2017,Malaysia: Floods - Melaka - 4/9/2017,10,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2017,Malaysia: Floods - Johor - 19/9/2017,414,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2017,Malaysia: Flash Floods - Kedah - 3/9/2017,66,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Flood - Selangor - 3/9/2017,45,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2017,Malaysia: Floods - Pahang - 2/9/2017,49,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2017,Malaysia: Floods - Kedah - 15/9/2017,593,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Floods - Penang - 21/9/2017,809,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2017,Malaysia: Floods - Negeri Sembilan - 9/9/2017,76,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2017,Malaysia: Floods - Melaka - 18/9/2017,137,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2017,Malaysia: Floods - Kedah - 21/9/2017,5876,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Floods - Kedah - 11/10/2017,279,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Floods - Perlis - 22/9/2017,4206,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2017,"Malaysia: Floods/Tropical Depression 29 - Penang, Kedah - 4/11/2017",11251,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Flash Floods - Johor - 14/11/2017,93,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2017,Malaysia: Floods - Selangor - 14/11/2017,100,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2017,Malaysia: Floods - Kedah - 14/11/2017,1428,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Floods - Negeri Sembilan - 12/12/2017,122,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2017,Malaysia: Floods - Johor - 13/12/2017,36,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2017,"Malaysia: Floods - Floods - Kelantan, Terengganu, Perlis - 27/11/2017",26134,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2017,Malaysia: Floods - Pahang - 2/12/2017,250,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2017,Malaysia: Floods - Kedah - 8/12/2017,46,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2017,Malaysia: Floods - Terengganu - 8/12/2017,280,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2017,"Malaysia, Philippines: Tropical Depression Urduja / Kai-Tak - 12/12/2017",830,Weather related,Storm,Typhoon/Hurricane/Cyclone,Unknown/National,102.2428,3.9559
+Malaysia,2017,Malaysia: Floods - Country-wide - 20/01/2017,15000,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2017,Malaysia: Floods - Perak - 20/03/2017,378,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Flood - Perak - 24/10/2018,111,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Floods - Johor - 1/1/2018,423,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Floods - Terengganu - 1/1/2018,2667,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2018,Malaysia: Floods - Pahang - 2/1/2018,10504,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2018,Malaysia: Flood - Melaka - 19/11/2018,1081,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2018,Malaysia: Flood - Melaka - 12/12/2018,17,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2018,Malaysia: Floods - Kedah - 4/6/2018,152,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Floods - Kelantan - 1/1/2018,117,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2018,Malaysia: Floods - Penang - 3/1/2018,25,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2018,Malaysia: Landslide - Johor - 13/12/2018,15,Weather related,Mass Movement,Landslide/Wet mass movement,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Terrengganu - 13/12/2018,1675,Weather related,Flood,Flood,Kuala Terengganu,102.9167,5.0833
+Malaysia,2018,Malaysia: Flood - Pahang - 13/12/2018,439,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2018,Malaysia: Flood - Penang - 27/5/2018,776,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2018,Malaysia: Flood - Selangor - 8/10/2018,375,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Perak - 13/12/2018,50,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Flood - Perak - 27/5/2018,1343,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,"Malaysia: Flood - Melaka, Pahang, Selangor - 24/1/2018",482,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2018,"Malaysia: Floods - Mersing, Segamat, Kota Tinggi (Johor) - 11/1/2018",1395,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Floods - Pahang - 11/1/2018,1457,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2018,Malaysia: Flood - Selangor - 11/1/2018,20,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Johor - 20/1/2018,61,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Perak - 21/1/2018,29,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Flood - Terengganu - 21/1/2018,17,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2018,Malaysia: Flood - Selangor - 23/1/2018,46,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Negeri Sembilan - 25/1/2018,31,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2018,Malaysia: Flood - Pahang - 2/3/2018,284,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2018,Malaysia: Flood - Negeri Sembilan - 27/5/2018,7,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2018,Malaysia: Flood - Terengganu - 17/12/2018,746,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2018,Malaysia: Flood - Kedah - 29/5/2018,1359,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Flood - Johor - 30/5/2018,59,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Selangor - 28/3/2018,117,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Johor - 15/4/2018,31,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Johor - 24/4/2018,146,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Selangor - 27/5/2018,139,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Kedah - 27/5/2018,804,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Floods - Johor - 4/6/2018,51,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Penang - 24/10/2018,73,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2018,Malaysia: Flood - Selangor - 24/6/2018,53,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Johor - 2/7/2018,26,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Johor - 18/10/2018,106,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Johor - 22/10/2018,20,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Kedah - 9/10/2018,864,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Flood - Perak - 10/10/2018,234,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Flood - Kuala Lumpur - 16/10/2018,73,Weather related,Flood,Flood,Kuala Lumpur,101.6869,3.139
+Malaysia,2018,Malaysia: Flood - Johor - 11/10/2018,67,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flash Flood - Johor Bahru - 8/9/2018,104,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Melaka - 12/10/2018,142,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2018,Malaysia: Flood - Kedah - 16/10/2018,486,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Flash Flood - Alor Setar (Kedah) - 4/10/2018,43,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2018,Malaysia: Flood - Perak - 4/10/2018,13,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2018,Malaysia: Flood - Selangor - 7/11/2018,107,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Terengganu - 7/11/2018,42,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2018,Malaysia: Flood - Johor - 6/11/2018,38,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Johor - 13/11/2018,75,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2018,Malaysia: Flood - Pahang - 14/11/2018,77,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2018,Malaysia: Flood - Penang - 19/11/2018,39,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2018,Malaysia: Flood - Selangor - 28/11/2018,312,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2018,Malaysia: Flood - Negeri Sembilan - 19/11/2018,27,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2018,Malaysia: Flood - Selangor - 24/12/2018,87,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Kelantan - 6/9/2019,25,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2019,Malaysia: Flood - Terengganu - 6/9/2019,12,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2019,Malaysia: Landslide - Pahang - 6/9/2019,50,Weather related,Mass Movement,Landslide/Wet mass movement,Kuantan,103.3256,3.8126
+Malaysia,2019,Malaysia: Floods - Langkawi (Kedah) - 23/6/2019,14,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2019,Malaysia: Storm - Selangor - 31/3/2019,110,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flash Floods - Penang - 8/5/2019,51,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2019,Malaysia: Flood - Selangor - 11/2/2019,12,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Kelantan - 7/11/2019,96,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2019,Malaysia: Flood - Malacca - 8/7/2019,1713,Weather related,Storm,Storm,Melaka Tengah,102.2341,2.2289
+Malaysia,2019,Malaysia: Flood - Penang - 9/8/2019,71,Weather related,Storm,Storm,Timur Laut,100.2917,5.4056
+Malaysia,2019,Malaysia: Flood - Perak - 26/10/2019,479,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2019,Malaysia: Flood - Baling (Mukim Siong) - 5/10/2019,120,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2019,Malaysia: Soil Erosion - Kuala Lumpur (Kampung Baru) - 17/10/2019,67,Weather related,Mass Movement,Landslide/Wet mass movement,Kampung Baru,101.7056,3.1611
+Malaysia,2019,Malaysia: Landslide - Kuala Lumpur (Kampung Sri Penchala) - 11/10/2019,65,Weather related,Mass Movement,Landslide/Wet mass movement,Kampung Sri Penchala,101.6288,3.1643
+Malaysia,2019,Malaysia: Flood - Pulau Pinang (Sebarang Perai Tengah) - 21/10/2019,111,Weather related,Flood,Flood,Sebarang Perai Tengah,100.4667,5.3667
+Malaysia,2019,Malaysia: Flood - Perak (South; Central) - 18/10/2019,310,Weather related,Flood,Flood,South; Central,101.0772,4.3879
+Malaysia,2019,Malaysia: Landslide - Kuala Lumpur (Ampang) - 12/10/2019,31,Weather related,Mass Movement,Landslide/Wet mass movement,Ampang,101.7618,3.1492
+Malaysia,2019,Malaysia: Flood - Johor (Pontian) - 22/10/2019,612,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2019,Malaysia: Flood - Johor (Pontian; Kulai jaya; Kuang) - 26/10/2019,421,Weather related,Flood,Flood,Pontian; Kulai Jaya; Kuang,103.3887,1.4883
+Malaysia,2019,Malaysia: Flood - Pulau Pinang (Sebarang Perai Tengah) - 26/10/2019,130,Weather related,Flood,Flood,Sebarang Perai Tengah,100.4667,5.3667
+Malaysia,2019,Malaysia: Flood - Selangor - 23/10/2019,877,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Selangor (Petaling) - 17/10/2019,33,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Kedah - 27/10/2019,246,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2019,Malaysia: Flood - Johor (Batu Pahat) - 25/10/2019,39,Weather related,Flood,Flood,Batu Pahat,102.9288,1.8494
+Malaysia,2019,Malaysia: Flood - Negeri Sembilan (Jelebu) - 24/10/2019,151,Weather related,Flood,Flood,Jelebu,102.0463,3.0421
+Malaysia,2019,Malaysia: Flood - Kedah (Baling) - 25/10/2019,371,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2019,Malaysia: Flood - Perlis - 28/10/2019,150,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2019,Malaysia: Flood - Hulu Terengganu - 13/11/2019,33,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2019,Malaysia: Flood - Pahang - 19/11/2019,7,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2019,Malaysia: Flood - Perak - 23/11/2019,60,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2019,Malaysia: Flood - Kedah - 24/11/2019,85,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2019,Malaysia: Flood - Kedah - 1/12/2019,34,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2019,Malaysia: Storm - Selangor - 7/11/2019,39,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Johor - 1/12/2019,11669,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2019,Malaysia: Flood - Pahang - 1/12/2019,1679,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2019,Malaysia: Flood - Selangor - 15/11/2019,606,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2019,Malaysia: Flood - Terengganu - 22/11/2019,9636,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2019,Malaysia: Flood - Melaka - 15/12/2019,67,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2019,Malaysia: Flood - Kelantan - 18/12/2019,4139,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2019,Malaysia: Flood - Kelantan - 29/11/2019,22679,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2019,Malaysia: Flood - Terengganu - 18/12/2019,78,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2020,Malaysia: Flood - Terrengganu - 27/11/2020,1041,Weather related,Flood,Flood,Kuala Terengganu,102.9167,5.0833
+Malaysia,2020,Malaysia: Floods - Penang (Jawi) - 17/05/2020,40,Weather related,Flood,Flood,Jawi,100.495,5.2
+Malaysia,2020,Malaysia: Floods - Kedah (Kulim) - 26/04/2020,32,Weather related,Flood,Flood,Kulim,100.56,5.364
+Malaysia,2020,Malaysia: Floods - Perak (Teluk Intan) - 04/06/2020,54,Weather related,Flood,Flood,Teluk Intan,101.0213,4.0259
+Malaysia,2020,Malaysia: Floods - Melaka - 28/11/2020,19,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2020,Malaysia: Flash floods - Perak (Teluk Intan) - 17/07/2020,44,Weather related,Flood,Flood,Teluk Intan,101.0213,4.0259
+Malaysia,2020,Malaysia: Flash floods - Malacca - 14/07/2020,29,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2020,Malaysia: Floods - Perak - 23/11/2020,77,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2020,Malaysia: Floods - Pulau Pinang - 29/11/2020,15,Weather related,Flood,Flood,Timur Laut,100.2917,5.4056
+Malaysia,2020,Malaysia: Floods - Selangor - 26/11/2020,96,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2020,"Malaysia: Flash flood - Johor (Pontian, Batu Pahat, Muar, Kluang, Tangkak) - 20/06/2020",1210,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2020,"Malaysia: Flooding - Johor (Kluang, Johor Baru, Kulai) - 28/1/2020",212,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2020,Malaysia: Floods - Penang (Juru) - 26/04/2020,148,Weather related,Flood,Flood,Juru,100.4333,5.3167
+Malaysia,2020,Malaysia: Flood - Johor (Johor Bahru) - 05/04/2020,40,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2020,Malaysia: Landslide - Selangor (Bukit Antarabangsa) - 29/05/2020,40,Weather related,Mass Movement,Landslide/Wet mass movement,Bukit Antarabangsa,101.7656,3.1818
+Malaysia,2020,Malaysia: Floods - Ipoh (Pengkalan Hulu) - 07/04/2020,65,Weather related,Flood,Flood,Ipoh,101.0829,4.5841
+Malaysia,2020,Malaysia: Floods - Malacca (Alor Gajah) - 24/03/2020,18,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2020,Malaysia: Floods - Negeri Sembilan (Jelebu) - 23/04/2020,41,Weather related,Flood,Flood,Jelebu,102.0463,3.0421
+Malaysia,2020,Malaysia: Flash Floods - Perak (Kampung Kelah Baru) - 25/04/2020,26,Weather related,Flood,Flood,Kampung Kelah Baru,101.0772,4.3879
+Malaysia,2020,Malaysia: Flash Floods - Perak (Rantau Panjang) - 26/04/2020,33,Weather related,Flood,Flood,Rantau Panjang,100.9667,4.9667
+Malaysia,2020,Malaysia: Flash Floods - Perak (Kinta and Batang Padang) - 25/04/2020,52,Weather related,Flood,Flood,Kinta And Batang Padang,101.0772,4.3879
+Malaysia,2020,"Malaysia: Flash floods - Johor (Batu Pahat, Tangkak, Muar, Pontian) - 13/07/2020",1271,Weather related,Flood,Flood,Batu Pahat,102.9288,1.8494
+Malaysia,2020,Malaysia: Flash flood - Penang (Tasek Junjong) - 07/07/2020,31,Weather related,Flood,Flood,Tasek Junjong,100.5333,5.2833
+Malaysia,2020,Malaysia: Flash flood - Negeri Sembilan - 13/07/2020,508,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2020,Malaysia: Flood - Pahang (Kuala Lipis) - 13/07/2020,176,Weather related,Flood,Flood,Kuala Lipis,102.0534,4.1842
+Malaysia,2020,Malaysia: Flood - Selangor (Sepang) - 13/07/2020,14,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2020,"Malaysia: Floods - Perak (Kampar, Larut Matang, Selama, Batang Padang) - 11/05/2020",81,Weather related,Flood,Flood,Kampar,101.15,4.3039
+Malaysia,2020,Malaysia: Flash flood - Negeri Sembilan (Seremban) - 22/06/2020,115,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2020,Malaysia: Flash flood - Negeri Sembilan (Seremban) - 21/09/2020,39,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2020,Malaysia: Flash flood - Kuala Lumpur - 10/09/2020,400,Weather related,Flood,Flood,Kuala Lumpur,101.6869,3.139
+Malaysia,2020,Malaysia: Flash flood - Penang (South Seberang Perai) - 10/09/2020,160,Weather related,Flood,Flood,South Seberang Perai,100.495,5.2
+Malaysia,2020,"Malaysia: Flash flood - Perak (Kampar, Kerian, Kuala Kangsar) - 10/09/2020",45,Weather related,Flood,Flood,Kampar,101.15,4.3039
+Malaysia,2020,"Malaysia: Flash floods - Selangor (Sepang, Hulu Langat) - 18/07/2020",756,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2020,"Malaysia: Flash flood - Negeri Sembilan (Seremban, Port Dickson) - 04/11/2020",118,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2020,Malaysia: Flash flood - Selangor (Sepang) - 04/11/2020,107,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2020,"Malysia: Flood - Perak (Larut, Matang) - 09/11/2020",381,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2020,"Malaysia: Floods - West Malaysia (Selangor, Perak, Melaka, Pahang, Johor, Terengganu, Kedah) - 20/11/2020",1105,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2020,Malaysia: Floods - Terengganu - 27/11/2020,1041,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2020,Malaysia: Floods - Terengganu - 02/12/2020,1606,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2020,Malaysia: Floods - Kelantan - 02/12/2020,369,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2020,Malaysia: Floods - Pahang - 02/12/2020,147,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2020,Malaysia: Floods - Perak - 30/11/2020,27,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2020,Malaysia: Floods - West Malaysia (Pahang) - 17/12/2020,38,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2020,Malaysia: Floods - West Malaysia (Kelantan) - 17/12/2020,1514,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2020,Malaysia: Floods - West Malaysia (Terengganu) - 19/12/2020,7852,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2021,Malaysia: Flood - Kelantan (Gua Musang) - 23/04/2021,100,Weather related,Flood,Flood,Gua Musang,101.9638,4.8823
+Malaysia,2021,"Malaysia: Flood -  Johor, Kelantan and Terengganu - 03/12/2021",135,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2021,"Malaysia: Flood - Malacca, Sabah and Sarawak - 17/05/2021",5645,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2021,"Malaysia: Flood - Johor, Sabah and Sarawak - 02/09/2021",568,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2021,Malaysia: Flood - Perak - 29/06/2021,19,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2021,Malaysia: Flood - Perak - 13/09/2021,13,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2021,Malaysia: Flood - West Malaysia (Perak/3 Districts) - 03/01/2021,1154,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2021,Malaysia: Flood - Western Malaysia (Pahang/Kuantan) - 26/03/2021,128,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2021,Malaysia: Flood -  Kedah - 14/12/2021,23,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2021,"Malaysia: Flood - Johor, Kedah, Perak, Selangor - 28/09/2021",439,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2021,Malaysia: Flood - Johor - 26/07/2021,6,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2021,Malaysia: Flood - West Malaysia (Selangor/2 Districts) - 03/01/2021,183,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2021,Malaysia: Flood - Malacca and Pahang - 12/07/2021,241,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2021,Malaysia: Flood - 6 States - 16/08/2021,539,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2021,Malaysia: Flood - 6 States - 21/10/2021,1414,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2021,"Malaysia: Flood - Johor, Pahang, Kelantan, Terengganu and Sabah - 04/01/2021",42947,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2021,Malaysia: Flood - 8 States - 29/10/2021,1234,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2021,Malaysia: Flood - 5 States - 19/11/2021,621,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2021,Malaysia: Flood - 10 States - 16/12/2021,68311,Weather related,Flood,Flood,Unknown/National,102.2428,3.9559
+Malaysia,2022,Malaysia: Flood - Pahang - 25/02/2022,92,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2022,Malaysia: Flood - Perak - 15/03/2022,14,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Johor - 10/03/2022,198,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Landslide - Kuala Lumpur - 10/03/2022,2,Weather related,Mass Movement,Landslide/Wet mass movement,Kuala Lumpur,101.6869,3.139
+Malaysia,2022,Malaysia: Flood - Kelantan - 26/02/2022,8843,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2022,Malaysia: Flood - Kuala Lumpur - 08/03/2022,590,Weather related,Flood,Flood,Kuala Lumpur,101.6869,3.139
+Malaysia,2022,Malaysia: Flood - Perak - 08/03/2022,15,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Selangor - 08/03/2022,1129,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Negeri Sembilan - 08/03/2022,22,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2022,Malaysia: Flood - Selangor - 24/06/2022,31,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Landfire - Pulau Pinang - 18/01/2022,54,Weather related,Wildfire,Wildfire,Timur Laut,100.2917,5.4056
+Malaysia,2022,Malaysia: Storm - Perak - 31/01/2022,5,Weather related,Storm,Storm,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Thunderstorm - Selangor - 28/01/2022,39,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Wildfire - Sabah and Johor - 21/01/2022,121,Weather related,Wildfire,Wildfire,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Landslide - Selangor - 18/01/2022,50,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Storm - Malacca - 22/02/2022,13,Weather related,Storm,Storm,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Storm - Pahang - 23/02/2022,28,Weather related,Storm,Storm,Kuantan,103.3256,3.8126
+Malaysia,2022,Malaysia: Flood - Pahang - 15/02/2022,74,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2022,Malaysia: Flood - Terengganu - 15/02/2022,4,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2022,Malaysia: Flood - Pahang - 18/03/2022,612,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2022,Malaysia: Thunderstorm - Selangor - 22/02/2022,7,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Terengganu - 26/02/2022,17522,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2022,Malaysia: Flood - Malacca - 09/03/2022,43,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Flood - Johor - 04/05/2022,180,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Kedah - 15/03/2022,8,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2022,Malaysia: Storm - Selangor - 24/03/2022,4,Weather related,Storm,Storm,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Landslide - Selangor - 31/03/2022,14,Weather related,Mass Movement,Landslide/Wet mass movement,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Johor - 12/04/2022,137,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Johor - 26/04/2022,34,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Kedah - 02/06/2022,541,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2022,Malaysia: Flood - Perlis - 09/05/2022,17,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2022,Malaysia: Flood - Negeri Sembilan - 17/05/2022,113,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2022,Malaysia: Flood - Selangor - 17/05/2022,43,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Perak - 25/05/2022,231,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Selangor - 25/05/2022,22,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Kedah - 05/07/2022,1424,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2022,Malaysia: Flood - Johor - 21/08/2022,86,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Perak - 29/08/2022,58,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Selangor - 29/08/2022,241,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flash flood - Kedah (Baling) - 06/09/2022,128,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2022,Malaysia: Flood - Johor (Pontian) - 22/09/2022,92,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2022,Malaysia: Flood - Johor (Batu Pahat) - 14/09/2022,481,Weather related,Flood,Flood,Batu Pahat,102.9288,1.8494
+Malaysia,2022,Malaysia: Flood - Selangor (Klang) - 28/09/2022,56,Weather related,Flood,Flood,Klang,101.4456,3.0449
+Malaysia,2022,Malaysia: Flood - Johor (Kluang) - 02/10/2022,80,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2022,Malaysia: Flood - Perak (Kinta) - 04/10/2022,93,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Kedah (Langkawi) - 16/10/2022,62,Weather related,Flood,Flood,Langkawi,99.8,6.35
+Malaysia,2022,Malaysia: Flood - Melaka (Jasin) - 12/10/2022,19,Weather related,Flood,Flood,Jasin,102.4316,2.3115
+Malaysia,2022,Malaysia: Flood - Perlis (Perlis) - 16/10/2022,16,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2022,Malaysia: Flood - Melaka (Alor Gajah) - 22/10/2022,284,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2022,Malaysia: Flood - Pahang (Lipis) - 23/10/2022,28,Weather related,Flood,Flood,Lipis,102.0534,4.1842
+Malaysia,2022,Malaysia: Flood - Kedah (Kubang Pasu) - 26/10/2022,128,Weather related,Flood,Flood,Kubang Pasu,100.419,6.2629
+Malaysia,2022,Malaysia: Flood - Johor - 02/08/2022,22,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Kedah - 02/08/2022,30,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2022,Malaysia: Flood - Selangor - 04/08/2022,12,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Storm - Melaka - 10/08/2022,20,Weather related,Storm,Storm,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Storm - Johor - 12/08/2022,90,Weather related,Storm,Storm,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Johor (Johor Bahru) - 25/09/2022,21,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Melaka - 18/09/2022,28,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Flood - Perak - 18/09/2022,32,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Negeri Sembilan - 24/09/2022,9,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2022,Malaysia: Flood - Melaka (Melaka Tengah) - 28/10/2022,102,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Flood - Kedah (Kota Setar) - 28/10/2022,75,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2022,Malaysia: Flood - Johor (Segamat) - 02/11/2022,57,Weather related,Flood,Flood,Segamat,102.8158,2.5147
+Malaysia,2022,Malaysia: Flood - Pahang (Lipis) - 03/11/2022,19,Weather related,Flood,Flood,Lipis,102.0534,4.1842
+Malaysia,2022,Malaysia: Flood - Kedah (Baling) - 04/11/2022,65,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2022,"Malaysia: Flood - Perak (Larut, Matang dan Selema) - 04/11/2022",628,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2022,Malaysia: Flood - Kelantan (Pasir Mas) - 06/11/2022,2229,Weather related,Flood,Flood,Pasir Mas,102.1408,6.0401
+Malaysia,2022,Malaysia: Flood - Kelantan (Gua Musang) - 07/11/2022,183,Weather related,Flood,Flood,Gua Musang,101.9638,4.8823
+Malaysia,2022,Malaysia: Flood - Pahang (Raub) - 03/11/2022,574,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2022,Malaysia: Flood - Selangor (Klang) - 09/11/2022,1162,Weather related,Flood,Flood,Klang,101.4456,3.0449
+Malaysia,2022,Malaysia: Flood - Selangor (Petaling) - 10/11/2022,622,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Flood - Johor (Kluang) - 12/11/2022,34,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2022,Malaysia: Flood - Johor (Ledang) - 14/11/2022,98,Weather related,Flood,Flood,Ledang,102.5401,2.2683
+Malaysia,2022,Malaysia: Flood - Johor (Pontian) - 13/11/2022,17,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2022,Malaysia: Flood - Melaka (Alor Gajah) - 11/11/2022,89,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2022,Malaysia: Flood - Perak (Kinta)- 13/11/2022,25,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2022,Malaysia: Flood - Selangor (Kuala Selangor) - 11/11/2022,541,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2022,Malaysia: Flood - Johor (Tangkak) - 14/11/2022,245,Weather related,Flood,Flood,Tangkak,102.5401,2.2683
+Malaysia,2022,Malaysia: Flood - Selangor (Sabak Bernam) - 15/11/2022,40,Weather related,Flood,Flood,Sabak Bernam,100.9833,3.7667
+Malaysia,2022,Malaysia: Flood - Negeri Sembilan (Rembau) - 17/11/2022,33,Weather related,Flood,Flood,Rembau,102.0911,2.5898
+Malaysia,2022,Malaysia: Flood - Selangor (Kuala Langat) - 17/11/2022,238,Weather related,Flood,Flood,Kuala Langat,101.5005,2.8136
+Malaysia,2022,Malaysia: Flood - Pahang (Temerloh) - 08/11/2022,175,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2022,Malaysia: Flood - Perak (Hilir Perak) - 13/11/2022,527,Weather related,Flood,Flood,Hilir Perak,100.9859,4.0041
+Malaysia,2022,Malaysia: Flood - Selangor (Sepang) - 17/11/2022,970,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2022,Malaysia: Flood - Johor (Pontian) - 02/10/2022,62,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2022,Malaysia: Flood - Johor (Kulai) - 02/10/2022,159,Weather related,Flood,Flood,Kulai,103.6009,1.6565
+Malaysia,2022,Malaysia: Flood - Johor (Johor Bahru) - 11/10/2022,17,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2022,Malaysia: Flood - Kedah (Baling) - 09/10/2022,261,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2022,Malaysia: Flood - Kedah (Padang Terap) - 26/10/2022,74,Weather related,Flood,Flood,Padang Terap,100.6,6.25
+Malaysia,2022,Malaysia: Flood - Negeri Sembilan (Kuala Pilah) - 19/10/2022,24,Weather related,Flood,Flood,Kuala Pilah,102.2487,2.7389
+Malaysia,2022,Malaysia: Flood - Pahang (Raub) - 23/10/2022,22,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2022,Malaysia: Flood - Johor (Kulai) - 12/11/2022,194,Weather related,Flood,Flood,Kulai,103.6009,1.6565
+Malaysia,2022,Malaysia: Flood - Pahang (Pekan) - 05/11/2022,6,Weather related,Flood,Flood,Pekan,103.3996,3.49
+Malaysia,2022,Malaysia: Flood - Pahang (Cameron Highlands) - 17/11/2022,44,Weather related,Flood,Flood,Cameron Highlands,101.3801,4.4716
+Malaysia,2022,Malaysia: Flood - Kedah (Kulim) - 11/11/2022,267,Weather related,Flood,Flood,Kulim,100.56,5.364
+Malaysia,2022,Malaysia: Flood - Kedah (Bandar Baharu) - 11/11/2022,21,Weather related,Flood,Flood,Bandar Baharu,100.55,5.1333
+Malaysia,2022,Malaysia: Flood - Kedah (Kubang Pasu) - 14/11/2022,10,Weather related,Flood,Flood,Kubang Pasu,100.419,6.2629
+Malaysia,2022,Malaysia: Flood - Perak (Manjung) - 15/11/2022,277,Weather related,Flood,Flood,Manjung,100.665,4.195
+Malaysia,2022,Malaysia: Flood - Perak (Perak Tengah) - 05/11/2022,343,Weather related,Flood,Flood,Perak Tengah,100.9022,4.3541
+Malaysia,2022,Malaysia: Flood - Perak (Kerian) - 14/11/2022,53,Weather related,Flood,Flood,Kerian,100.5333,5.0167
+Malaysia,2022,Malaysia: Flood - Perak (Hulu Perak) - 16/11/2022,89,Weather related,Flood,Flood,Hulu Perak,101.3283,5.4287
+Malaysia,2022,Malaysia: Flood - Kelantan (Tanah Merah) - 11/11/2022,28,Weather related,Flood,Flood,Tanah Merah,102.15,5.8
+Malaysia,2022,Malaysia: Flood - Selangor (Shah Alam) - 10/11/2022,35,Weather related,Flood,Flood,Shah Alam,101.5183,3.0738
+Malaysia,2022,Malaysia: Flood - Selangor (Hulu Langat) - 17/11/2022,62,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2022,Malaysia: Flood - Pulau Pinang (Seberang Perai Timur) - 11/11/2022,210,Weather related,Flood,Flood,Seberang Perai Timur,100.4667,5.3667
+Malaysia,2022,Malaysia: Flood - Pulau Pinang (Seberang Perai Utara) - 12/11/2022,192,Weather related,Flood,Flood,Seberang Perai Utara,100.4333,5.4333
+Malaysia,2022,Malaysia: Flood - Melaka (Melaka Tengah) - 15/11/2022,16,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2022,Malaysia: Flood -  Perak (Batang Padang) - 13/12/2022,15,Weather related,Flood,Flood,Batang Padang,101.25,4.1667
+Malaysia,2022,Malaysia: Floods - Melaka (Alor Gajah) - 01/12/2022,28,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2022,Malaysia: Floods - Selangor (Kuala Langat) - 02/12/2022,13,Weather related,Flood,Flood,Kuala Langat,101.5005,2.8136
+Malaysia,2022,Malaysia: Floods - Selangor (Petaling) - 03/12/2022,39,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Floods - Selangor (Sepang) - 03/12/2022,100,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2022,Malaysia: Floods - Selangor (Kuala Selangor) - 22/12/2022,31,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2022,"Malaysia: Floods - Perak (Larut, Matang dan Selama) - 04/12/2022",98,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2022,Malaysia: Floods - Perak (Hilir Perak) - 09/12/2022,250,Weather related,Flood,Flood,Hilir Perak,100.9859,4.0041
+Malaysia,2022,Malaysia: Floods - Perak (Manjung) - 13/12/2022,28,Weather related,Flood,Flood,Manjung,100.665,4.195
+Malaysia,2022,Malaysia: Floods - Perak (Muallim) - 13/12/2022,15,Weather related,Flood,Flood,Muallim,101.5303,3.8055
+Malaysia,2022,Malaysia: Floods - Perak (Perak Tengah) - 12/12/2022,11,Weather related,Flood,Flood,Perak Tengah,100.9022,4.3541
+Malaysia,2022,Malaysia: Floods - Perak (Kampar) - 15/12/2022,7,Weather related,Flood,Flood,Kampar,101.15,4.3039
+Malaysia,2022,Malaysia: Floods - Pahang (Raub) - 07/12/2022,402,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2022,Malaysia: Floods - Pahang (Kuala Lipis) - 07/12/2022,277,Weather related,Flood,Flood,Kuala Lipis,102.0534,4.1842
+Malaysia,2022,Malaysia: Floods - Pahang (Temerloh) - 08/12/2022,383,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2022,Malaysia: Floods - Pahang (Bera) - 09/12/2022,35,Weather related,Flood,Flood,Bera,102.5167,3.2667
+Malaysia,2022,Malaysia: Floods - Pahang (Jerantut) - 10/12/2022,39,Weather related,Flood,Flood,Jerantut,102.3626,3.936
+Malaysia,2022,Malaysia: Floods - Pahang (Pekan) - 12/12/2022,142,Weather related,Flood,Flood,Pekan,103.3996,3.49
+Malaysia,2022,Malaysia: Floods - Pahang (Kuantan) - 19/12/2022,1002,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2022,Malaysia: Floods - Kelantan (Kota Bharu) - 09/12/2022,4834,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2022,Malaysia: Floods - Kelantan (Jeli) - 18/12/2022,618,Weather related,Flood,Flood,Jeli,101.8458,5.6961
+Malaysia,2022,Malaysia: Floods - Kelantan (Machang) - 18/12/2022,1203,Weather related,Flood,Flood,Machang,102.2167,5.7667
+Malaysia,2022,Malaysia: Floods - Kelantan (Kuala Krai) - 18/12/2022,3522,Weather related,Flood,Flood,Kuala Krai,102.2,5.5333
+Malaysia,2022,Malaysia: Floods - Kelantan (Pasir Mas) - 10/12/2022,15424,Weather related,Flood,Flood,Pasir Mas,102.1408,6.0401
+Malaysia,2022,Malaysia: Floods - Kelantan (Pasir Puteh) - 18/12/2022,6305,Weather related,Flood,Flood,Pasir Puteh,102.4,5.8333
+Malaysia,2022,Malaysia: Floods - Kelantan (Tanah Merah) - 18/12/2022,1700,Weather related,Flood,Flood,Tanah Merah,102.15,5.8
+Malaysia,2022,Malaysia: Floods - Kelantan (Bachok) - 18/12/2022,1705,Weather related,Flood,Flood,Bachok,102.4,6.0667
+Malaysia,2022,Malaysia: Floods - Kelantan (Tumpat) - 18/12/2022,6070,Weather related,Flood,Flood,Tumpat,102.1673,6.1963
+Malaysia,2022,Malaysia: Floods - Terengganu (Kuala Terengganu) - 09/12/2022,3552,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2022,Malaysia: Floods - Terengganu (Besut) - 09/12/2022,12965,Weather related,Flood,Flood,Besut,102.5,5.7167
+Malaysia,2022,Malaysia: Floods - Terengganu (Kuala Nerus) - 09/12/2022,4240,Weather related,Flood,Flood,Kuala Nerus,103.0883,5.3789
+Malaysia,2022,Malaysia: Floods - Terengganu (Setiu) - 09/12/2022,6439,Weather related,Flood,Flood,Setiu,102.75,5.5
+Malaysia,2022,Malaysia: Floods - Terengganu (Kemaman) - 10/12/2022,14668,Weather related,Flood,Flood,Kemaman,103.3333,4.2333
+Malaysia,2022,Malaysia: Floods - Terengganu (Dungun) - 10/12/2022,6442,Weather related,Flood,Flood,Dungun,103.4167,4.75
+Malaysia,2022,Malaysia: Floods - Terengganu (Hulu Terengganu) - 14/12/2022,7660,Weather related,Flood,Flood,Hulu Terengganu,102.9167,5.0833
+Malaysia,2022,Malaysia: Floods - Terengganu (Marang) - 18/12/2022,1828,Weather related,Flood,Flood,Marang,103.2,5.2
+Malaysia,2022,Malaysia: Floods - Johor (Segamat) - 11/12/2022,75,Weather related,Flood,Flood,Segamat,102.8158,2.5147
+Malaysia,2022,Malaysia: Landslide - Selangor (Hulu Selangor) - 16/12/2022,92,Weather related,Mass Movement,Landslide/Wet mass movement,Hulu Selangor,101.6508,3.5656
+Malaysia,2022,Malaysia: Landslide - Selangor (Petaling) - 03/12/2022,7,Weather related,Mass Movement,Landslide/Wet mass movement,Petaling,101.5901,3.109
+Malaysia,2022,Malaysia: Storm - Perlis (Arau) - 02/12/2022,5,Weather related,Storm,Storm,Arau,100.2667,6.4333
+Malaysia,2022,Malaysia: Floods - Perak (Bagan Datuk) - 20/12/2022,26,Weather related,Flood,Flood,Bagan Datuk,100.7833,3.9833
+Malaysia,2023,Malaysia: Flood - Johor (Kluang) - 24/01/2023,1423,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2023,Malaysia: Flood - Johor (Segamat) - 24/01/2023,1872,Weather related,Flood,Flood,Segamat,102.8158,2.5147
+Malaysia,2023,Malaysia: Flood - Johor (Batu Pahat) - 25/01/2023,1220,Weather related,Flood,Flood,Batu Pahat,102.9288,1.8494
+Malaysia,2023,Malaysia: Flood - Johor (Muar) - 25/01/2023,225,Weather related,Flood,Flood,Muar,102.5689,2.0442
+Malaysia,2023,Malaysia: Flood - Johor (Pontian) - 25/01/2023,18,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2023,Malaysia: Flood - Pahang (Rompin) - 24/01/2023,367,Weather related,Flood,Flood,Rompin,103.4833,2.8167
+Malaysia,2023,Malaysia: Flood - Terengganu (Besut) - 26/01/2023,20,Weather related,Flood,Flood,Besut,102.5,5.7167
+Malaysia,2023,Malaysia: Flood - Kedah (Kulim) - 06/02/2023,32,Weather related,Flood,Flood,Kulim,100.56,5.364
+Malaysia,2023,Malaysia: Flood - Kelantan (Pasir Mas) - 05/02/2023,28,Weather related,Flood,Flood,Pasir Mas,102.1408,6.0401
+Malaysia,2023,Malaysia: Flood - Pahang (Kuantan) - 06/02/2023,4879,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2023,Malaysia: Flood - Pahang (Pekan) - 06/02/2023,119,Weather related,Flood,Flood,Pekan,103.3996,3.49
+Malaysia,2023,Malaysia: Flood - Terengganu (Kemaman)  - 06/02/2023,25,Weather related,Flood,Flood,Kemaman,103.3333,4.2333
+Malaysia,2023,Malaysia: Flood - Johor (Tangkak) - 26/01/2023,15,Weather related,Flood,Flood,Tangkak,102.5401,2.2683
+Malaysia,2023,Malaysia: Flood - Perak (Kampar) - 11/01/2023,93,Weather related,Flood,Flood,Kampar,101.15,4.3039
+Malaysia,2023,Malaysia: Flood - Terengganu (Hulu Terengganu) - 12/01/2023,43,Weather related,Flood,Flood,Hulu Terengganu,102.9167,5.0833
+Malaysia,2023,Malaysia: Flood - Pahang (Jerantut) - 08/02/2023,12,Weather related,Flood,Flood,Jerantut,102.3626,3.936
+Malaysia,2023,Malaysia: Flood - Pahang (Maran) - 09/02/2023,14,Weather related,Flood,Flood,Maran,102.7667,3.5833
+Malaysia,2023,Malaysia: Flood - Pahang (Raub) - 09/02/2023,21,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2023,Malaysia: Flood - Perak (Batang Padang) - 14/02/2023,56,Weather related,Flood,Flood,Batang Padang,101.25,4.1667
+Malaysia,2023,Malaysia: Flood - Pahang (Bera) - 15/02/2023,18,Weather related,Flood,Flood,Bera,102.5167,3.2667
+Malaysia,2023,Malaysia: Flood - Selangor (Hulu Langat) - 14/02/2023,20,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2023,Malaysia: Flood - Johor (Johor Bahru) - 01/03/2023,1888,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2023,Malaysia: Flood - Johor (Kluang) - 01/03/2023,5294,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2023,Malaysia: Flood - Johor (Kulai) - 01/03/2023,1040,Weather related,Flood,Flood,Kulai,103.6009,1.6565
+Malaysia,2023,Malaysia: Flood - Johor (Pontian) - 01/03/2023,551,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2023,Malaysia: Flood - Johor (Segamat) - 01/03/2023,16413,Weather related,Flood,Flood,Segamat,102.8158,2.5147
+Malaysia,2023,Malaysia: Flood - Johor (Tangkak) - 01/03/2023,4510,Weather related,Flood,Flood,Tangkak,102.5401,2.2683
+Malaysia,2023,Malaysia: Flood - Melaka (Alor Gajah) - 01/03/2023,21,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2023,Malaysia: Flood - Melaka (Jasin) - 01/03/2023,692,Weather related,Flood,Flood,Jasin,102.4316,2.3115
+Malaysia,2023,Malaysia: Flood - Negeri Sembilan (Jempol) - 01/03/2023,171,Weather related,Flood,Flood,Jempol,102.3833,2.8167
+Malaysia,2023,Malaysia: Flood - Negeri Sembilan (Kuala Pilah) - 01/03/2023,62,Weather related,Flood,Flood,Kuala Pilah,102.2487,2.7389
+Malaysia,2023,Malaysia: Flood - Negeri Sembilan (Tampin) - 01/03/2023,939,Weather related,Flood,Flood,Tampin,102.2333,2.4667
+Malaysia,2023,Malaysia: Flood - Pahang (Rompin) - 01/03/2023,3324,Weather related,Flood,Flood,Rompin,103.4833,2.8167
+Malaysia,2023,Malaysia: Flood - Johor (Batu Pahat) - 01/03/2023,46540,Weather related,Flood,Flood,Batu Pahat,102.9288,1.8494
+Malaysia,2023,Malaysia: Flood - Johor (Muar) - 01/03/2023,5760,Weather related,Flood,Flood,Muar,102.5689,2.0442
+Malaysia,2023,Malaysia: Flood - Pahang (Bera) - 02/03/2023,29,Weather related,Flood,Flood,Bera,102.5167,3.2667
+Malaysia,2023,Malaysia: Flood - Pahang (Jerantut) - 01/03/2023,106,Weather related,Flood,Flood,Jerantut,102.3626,3.936
+Malaysia,2023,Malaysia: Flood - Pahang (Maran) - 01/03/2023,614,Weather related,Flood,Flood,Maran,102.7667,3.5833
+Malaysia,2023,Malaysia: Flood - Pahang (Raub) - 01/03/2023,80,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2023,Malaysia: Flood - Pahang (Pekan) - 01/03/2023,106,Weather related,Flood,Flood,Pekan,103.3996,3.49
+Malaysia,2023,Malaysia: Flood - Pahang (Temerloh) - 03/03/2023,306,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2023,Malaysia: Flood - Johor (Johor Bahru) - 28/02/2023,560,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2023,Malaysia: Flood - Johor (Kluang) - 28/02/2023,327,Weather related,Flood,Flood,Kluang,103.3328,2.0251
+Malaysia,2023,Malaysia: Flood - Kedah (Bandar Baharu) - 03/02/2023,35,Weather related,Flood,Flood,Bandar Baharu,100.55,5.1333
+Malaysia,2023,"Malaysia: Flood - Perak (Larut, Matang & Selama) - 03/02/2023",2,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2023,Malaysia: Flood - Perak (Muallim) - 14/02/2023,277,Weather related,Flood,Flood,Muallim,101.5303,3.8055
+Malaysia,2023,Malaysia: Flood - Pulau Pinang (Seberang Perai Selatan) - 03/02/2023,51,Weather related,Flood,Flood,Seberang Perai Selatan,100.495,5.2
+Malaysia,2023,Malaysia: Flood - Perak (Larut) - 11/03/2023,195,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2023,Malaysia: Storm - Selangor (Sepang) - 11/04/2023,10,Weather related,Storm,Storm,Sepang,101.7501,2.6953
+Malaysia,2023,Malaysia: Flood - Selangor (Kuala Selangor) - 04/03/2023,30,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2023,Malaysia: Flood - Selangor (Shah Alam) - 04/03/2023,82,Weather related,Flood,Flood,Shah Alam,101.5183,3.0738
+Malaysia,2023,Malaysia: Flood - Perak (Kinta) - 03/05/2023,13,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2023,Malaysia: Flood - Johor (Tangkak) - 13/07/2023,21,Weather related,Flood,Flood,Tangkak,102.5401,2.2683
+Malaysia,2023,Malaysia: Flood - Melaka (Jasin) - 13/07/2023,44,Weather related,Flood,Flood,Jasin,102.4316,2.3115
+Malaysia,2023,Malaysia: Flood - Johor (Tangkak) - 31/07/2023,28,Weather related,Flood,Flood,Tangkak,102.5401,2.2683
+Malaysia,2023,Malaysia: Flood - Pahang (Maran) - 11/08/2023,6,Weather related,Flood,Flood,Maran,102.7667,3.5833
+Malaysia,2023,Malaysia: Floods - Melaka (Melaka Tengah) - 14/08/2023,28,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2023,Malaysia: Flood - Pahang (Maran) - 27/08/2023,242,Weather related,Flood,Flood,Maran,102.7667,3.5833
+Malaysia,2023,Malaysia: Storm - Selangor (Hulu Langat) - 29/08/2023,29,Weather related,Storm,Storm,Hulu Langat,101.7963,3.1114
+Malaysia,2023,Malaysia: Flood - Pahang (Jerantut and Raub) - 07/09/2023,69,Weather related,Flood,Flood,Jerantut And Raub,102.3626,3.936
+Malaysia,2023,Malaysia: Flood - Perak (Muallim) - 09/09/2023,499,Weather related,Flood,Flood,Muallim,101.5303,3.8055
+Malaysia,2023,Malaysia: Flood - Malacca (Alor Gajah) - 20/09/2023,41,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2023,Malaysia: Flood - Pahang (Maran) - 20/09/2023,126,Weather related,Flood,Flood,Maran,102.7667,3.5833
+Malaysia,2023,Malaysia: Flood - Perak (4 Districs) - 22/09/2023,161,Weather related,Flood,Flood,4 Districs,101.0772,4.3879
+Malaysia,2023,Malaysia: Flash flood - Kedah (Baling) - 22/09/2023,102,Weather related,Flood,Flood,Baling,100.9169,5.6766
+Malaysia,2023,Malaysia: Storm - Selangor (Hulu Langat) - 22/09/2023,42,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2023,"Malaysia: Flood - Kedah (Kubang Pasu, Baling and Kota Setar) - 26/09/2023",1856,Weather related,Flood,Flood,Kubang Pasu,100.419,6.2629
+Malaysia,2023,Malaysia: Flood - Perlis (Arau) - 27/09/2023,47,Weather related,Flood,Flood,Arau,100.2667,6.4333
+Malaysia,2023,"Malaysia: Floods - Kelantan (Bachok, Kota Bharu) - 06/10/2023",43,Weather related,Flood,Flood,Bachok,102.4,6.0667
+Malaysia,2023,Malaysia: Flood - Selangor (Petaling) - 11/10/2023,13,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2023,Malaysia: Landslide - Pahang (Cameron Highlands) - 13/10/2023,124,Weather related,Mass Movement,Landslide/Wet mass movement,Cameron Highlands,101.3801,4.4716
+Malaysia,2023,Malaysia: Flood - Perak (Batang Padang) - 21/10/2023,54,Weather related,Flood,Flood,Batang Padang,101.25,4.1667
+Malaysia,2023,Malaysia: Flood - Kedah (Pendang and Sik) - 22/10/2023,123,Weather related,Flood,Flood,Pendang And Sik,100.4667,5.9833
+Malaysia,2023,Malaysia: Flood - Selangor (Hulu Langat) - 23/10/2023,28,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2023,Malaysia: Flash flood - Negeri Sembilan (Kuala Pilah) - 22/10/2023,22,Weather related,Flood,Flood,Kuala Pilah,102.2487,2.7389
+Malaysia,2023,Malaysia: Flood - Perak (6 Districts) - 23/10/2023,1067,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2023,Malaysia: Flood - Pahang (Raub) - 24/10/2023,8,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2023,Malaysia: Flood - Kedah (Baling and Bandar Baharu) - 27/10/2023,166,Weather related,Flood,Flood,Baling And Bandar Baharu,100.9169,5.6766
+Malaysia,2023,Malaysia: Flood - Kedah (Kuala Muda) - 30/10/2023,110,Weather related,Flood,Flood,Kuala Muda,100.4833,5.65
+Malaysia,2023,Malaysia: Flood - Selangor (5 Districts) - 03/11/2023,899,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2023,Malaysia: Flood - Kedah (Kubang Pasu and Kota Setar) - 13/11/2023,278,Weather related,Flood,Flood,Kubang Pasu And Kota Setar,100.419,6.2629
+Malaysia,2023,Malaysia: Flood - Perlis (Perlis) - 14/11/2023,46,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2023,Malaysia: Flood - Terengganu (7 Districts) - 20/11/2023,5289,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2023,Malaysia: Flood - Kelantan (6 Districts) - 21/11/2023,6947,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2023,Malaysia: Flood - Johor (Johor Bahru) - 01/12/2023,582,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2023,Malaysia: Flood - Selangor (Kuala Selangor) - 12/12/2023,196,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2023,"Malaysia: Flood - Perak (Larut, Matang dan Selama) - 14/12/2023",20,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2023,Malaysia: Flood - Kelantan (9 Districts) - 01/12/2023,41584,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2023,Malaysia: Flood - Perak (Hilir Perak) - 16/12/2023,89,Weather related,Flood,Flood,Hilir Perak,100.9859,4.0041
+Malaysia,2023,Malaysia: Flood - Johor (3 Districts) - 26/12/2023,237,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2023,Malaysia: Flood - Pahang (9 Districts) - 24/12/2023,1096,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2023,Malaysia: Flood - Selangor (Kuala Langat) - 24/12/2023,11,Weather related,Flood,Flood,Kuala Langat,101.5005,2.8136
+Malaysia,2023,Malaysia: Flood - Negeri Sembilan (Seremban) - 24/12/2023,55,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2023,Malaysia: Flood - Johor (Johor Bahru) - 01/11/2023,74,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2023,Malaysia: Flood - Pahang (Bentong) - 06/11/2023,17,Weather related,Flood,Flood,Bentong,101.9,3.5167
+Malaysia,2023,Malaysia: Flood - Terengganu (7 Districts) - 14/12/2023,19380,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2023,Malaysia: Flood - Selangor (Klang) - 16/12/2023,23,Weather related,Flood,Flood,Klang,101.4456,3.0449
+Malaysia,2023,Malaysia: Flood - Perak (Padang Terap) - 05/12/2023,31,Weather related,Flood,Flood,Padang Terap,100.6,6.25
+Malaysia,2024,Malaysia: Flood - Johor (8 Districts) - 04/01/2024,12266,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2024,Malaysia: Flood - Pahang (3 Districts) - 06/01/2024,2583,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2024,Malaysia: Flood - Terengganu (6 Districts) - 23/01/2024,4499,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2024,Malaysia: Flood - Kelantan (4 Districts) - 24/01/2024,1000,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2024,Malaysia: Flood - Pahang (Kuantan and Rompin) - 24/01/2024,570,Weather related,Flood,Flood,Kuantan And Rompin,103.3256,3.8126
+Malaysia,2024,Malaysia: Flood - Pahang (Raub) - 03/02/2024,136,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2024,Malaysia: Flood - Pahang (Temerloh) - 01/01/2024,10,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2024,Malaysia: Flood - Kuala Lumpur (Kuala Lumpur) - 09/03/2024,8,Weather related,Flood,Flood,Kuala Lumpur,101.6869,3.139
+Malaysia,2024,Malaysia: Flood - Malacca (Alor Gajah and Melaka Tengah) - 15/04/2024,158,Weather related,Flood,Flood,Alor Gajah And Melaka Tengah,102.2,2.3833
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (Port Dickson and Rembau) - 17/04/2024,77,Weather related,Flood,Flood,Port Dickson And Rembau,101.7958,2.5228
+Malaysia,2024,"Malaysia: Flood - Selangor (Kuala Selangor, Petaling and Klang) - 17/04/2024",635,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2024,Malaysia: Flood - Kedah (Kulim) - 17/05/2024,78,Weather related,Flood,Flood,Kulim,100.56,5.364
+Malaysia,2024,"Malaysia: Flood - Perak (Hilir Perak, Kuala Kangsar, Taiping) - 17/05/2024",560,Weather related,Flood,Flood,Hilir Perak,100.9859,4.0041
+Malaysia,2024,Malaysia: Flood - Perak (Perak Tengah) - 23/05/2024,130,Weather related,Flood,Flood,Perak Tengah,100.9022,4.3541
+Malaysia,2024,Malaysia: Flood - Johor (Pontian) - 02/06/2024,3,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (Port Dickson) - 12/05/2024,25,Weather related,Flood,Flood,Port Dickson,101.7958,2.5228
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (Port Dickson) - 14/05/2024,24,Weather related,Flood,Flood,Port Dickson,101.7958,2.5228
+Malaysia,2024,Malaysia: Flood - Selangor (Hulu Langat) - 09/05/2024,49,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2024,Malaysia: Flood - Johor (Pontian) - 21/06/2024,7,Weather related,Flood,Flood,Pontian,103.3887,1.4883
+Malaysia,2024,Malaysia: Flood - Melaka (Alor Gajah) - 10/07/2024,28,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2024,Malaysia: Flood - Perak (Muallim) - 04/08/2024,165,Weather related,Flood,Flood,Muallim,101.5303,3.8055
+Malaysia,2024,Malaysia: Flood - Selangor (Hulu Selangor) - 05/08/2024,143,Weather related,Flood,Flood,Hulu Selangor,101.6508,3.5656
+Malaysia,2024,Malaysia: Flood - Perak (Hulu Perak) - 11/08/2024,105,Weather related,Flood,Flood,Hulu Perak,101.3283,5.4287
+Malaysia,2024,Malaysia: Flood - Melaka (Alor Gajah) - 11/08/2024,407,Weather related,Flood,Flood,Alor Gajah,102.2,2.3833
+Malaysia,2024,"Malaysia: Flood - Negeri Sembilan (Port Dickson, Rembau) - 12/08/2024",68,Weather related,Flood,Flood,Port Dickson,101.7958,2.5228
+Malaysia,2024,"Malaysia: Flood - Perak (Larut, Matang dan Selama) - 20/08/2024",9,Weather related,Flood,Flood,Larut,100.75,4.85
+Malaysia,2024,Malaysia: Flood - Kedah (Kuala Muda) - 21/08/2024,84,Weather related,Flood,Flood,Kuala Muda,100.4833,5.65
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (Port Dickson) - 24/08/2024,141,Weather related,Flood,Flood,Port Dickson,101.7958,2.5228
+Malaysia,2024,"Malaysia: Flood - Perak (Muallim, Taiping, Larut, Matang dan Selama) - 24/08/2024",243,Weather related,Flood,Flood,Muallim,101.5303,3.8055
+Malaysia,2024,"Malaysia: Flood - Selangor (Sepang, Kuala Langat, Kuala Selangor) - 24/08/2024",454,Weather related,Flood,Flood,Sepang,101.7501,2.6953
+Malaysia,2024,Malaysia: Flood - Kedah (Kulim) - 08/09/2024,39,Weather related,Flood,Flood,Kulim,100.56,5.364
+Malaysia,2024,Malaysia: Flood - Kedah (7 Districts) - 17/09/2024,9897,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2024,"Malaysia: Flood - Pulau Pinang (Seberang Perai Selatan, Seberang Perai Tengah, Seberang Perai Utara) - 17/09/2024",661,Weather related,Flood,Flood,Seberang Perai Selatan,100.495,5.2
+Malaysia,2024,Malaysia: Storm - Selangor (Gombak) - 18/09/2024,8,Weather related,Storm,Storm,Gombak,101.6667,3.2667
+Malaysia,2024,"Malaysia: Flood - Perlis (Arau, Perlis) - 18/09/2024",114,Weather related,Flood,Flood,Arau,100.2667,6.4333
+Malaysia,2024,Malaysia: Flood - Selangor (Kuala Selangor) - 19/09/2024,101,Weather related,Flood,Flood,Kuala Selangor,101.2505,3.3361
+Malaysia,2024,Malaysia: Flood - Perak (Kerian) - 21/09/2024,29,Weather related,Flood,Flood,Kerian,100.5333,5.0167
+Malaysia,2024,Malaysia: Flood - Selangor (Petaling) - 26/09/2024,89,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2024,Malaysia: Flood - Kedah (4 Districts) - 28/09/2024,1487,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2024,Malaysia: Flood - Perak (8 Districts) - 01/10/2024,2716,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2024,Malaysia: Flood - Selangor (6 Districts) - 03/10/2024,1696,Weather related,Flood,Flood,Petaling,101.5901,3.109
+Malaysia,2024,Malaysia: Flood - Kedah (6 Districts) - 04/10/2024,4776,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2024,Malaysia: Flood - Johor (4 Districts) - 06/10/2024,772,Weather related,Flood,Flood,Johor Bahru,103.7414,1.4927
+Malaysia,2024,Malaysia: Flood - Melaka (Jasin) - 07/10/2024,262,Weather related,Flood,Flood,Jasin,102.4316,2.3115
+Malaysia,2024,"Malaysia: Flood - Perlis (Arau, Perlis) - 08/10/2024",1154,Weather related,Flood,Flood,Arau,100.2667,6.4333
+Malaysia,2024,Malaysia: Landslide - Pahang (Cameron Highlands) - 10/10/2024,70,Weather related,Mass Movement,Landslide/Wet mass movement,Cameron Highlands,101.3801,4.4716
+Malaysia,2024,Malaysia: Flood - Pahang (Temerloh) - 13/10/2024,1795,Weather related,Flood,Flood,Temerloh,102.4176,3.4484
+Malaysia,2024,Malaysia: Flood - Selangor (Hulu Langat) - 08/11/2024,10,Weather related,Flood,Flood,Hulu Langat,101.7963,3.1114
+Malaysia,2024,"Malaysia: Flood - Pahang (Raub, Lipis) - 10/11/2024",453,Weather related,Flood,Flood,Raub,101.8569,3.7915
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (Kuala Pilah) - 17/11/2024,44,Weather related,Flood,Flood,Kuala Pilah,102.2487,2.7389
+Malaysia,2024,Malaysia: Flood - Terengganu (8 Districts) - 19/11/2024,54256,Weather related,Flood,Flood,Kuala Terengganu,103.1408,5.3302
+Malaysia,2024,Malaysia: Flood - Perak (7 Districts) - 22/11/2024,939,Weather related,Flood,Flood,Kinta,101.0772,4.3879
+Malaysia,2024,Malaysia: Flood - Kelantan (10 Districts) - 22/11/2024,101319,Weather related,Flood,Flood,Kota Bharu,102.2381,6.1254
+Malaysia,2024,"Malaysia: Flood - Melaka (Melaka Tengah, Jasin, Alor Gajah) - 23/11/2024",605,Weather related,Flood,Flood,Melaka Tengah,102.2341,2.2289
+Malaysia,2024,Malaysia: Flood - Selangor (Kuala Langat) - 23/11/2024,8,Weather related,Flood,Flood,Kuala Langat,101.5005,2.8136
+Malaysia,2024,"Malaysia: Flood - Johor (Segamat, Tangkak, Batu Pahat) - 23/11/2024",1509,Weather related,Flood,Flood,Segamat,102.8158,2.5147
+Malaysia,2024,Malaysia: Flood - Kedah (7 Districts) - 27/11/2024,10012,Weather related,Flood,Flood,Kota Setar,100.3672,6.1264
+Malaysia,2024,Malaysia: Flood - Perlis (Perlis) - 27/11/2024,496,Weather related,Flood,Flood,Perlis,100.2048,6.4449
+Malaysia,2024,Malaysia: Flood - Negeri Sembilan (4 Districts) - 29/11/2024,2164,Weather related,Flood,Flood,Seremban,101.9378,2.7258
+Malaysia,2024,Malaysia: Flood - Selangor (Klang) - 29/11/2024,487,Weather related,Flood,Flood,Klang,101.4456,3.0449
+Malaysia,2024,Malaysia: Flood - Pahang (6 Districts) - 01/12/2024,1892,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2024,"Malaysia: Flood - Terengganu (Kemaman, Dungun) - 10/12/2024",5198,Weather related,Flood,Flood,Kemaman,103.3333,4.2333
+Malaysia,2024,Malaysia: Flood - Kelantan (Gua Musang) - 10/12/2024,288,Weather related,Flood,Flood,Gua Musang,101.9638,4.8823
+Malaysia,2024,Malaysia: Flood - Pahang (4 Districts) - 10/12/2024,220,Weather related,Flood,Flood,Kuantan,103.3256,3.8126
+Malaysia,2024,"Malaysia: Flood - Pahang (Lipis, Raub) - 25/12/2024",67,Weather related,Flood,Flood,Lipis,102.0534,4.1842
+Malaysia,2024,"Malaysia: Flood - Kelantan (Tanah Merah, Kuala Krai, Pasir Mas) - 29/12/2024",611,Weather related,Flood,Flood,Tanah Merah,102.15,5.8
+Malaysia,2024,"Malaysia: Flood - Terengganu (Hulu Terengganu, Besut) - 29/12/2024",156,Weather related,Flood,Flood,Hulu Terengganu,102.9167,5.0833
