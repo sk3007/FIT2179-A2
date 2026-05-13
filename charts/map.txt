@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_admin0"}
+      },
+      "mark": {"type": "geoshape", "fill": "#ddd", "stroke": "black"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_admin1"}
+      },
+      "mark": {"type": "geoshape", "fill": "#74c69d", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_admin2"}
+      },
+      "mark": {"type": "geoshape", "fill": "none", "stroke": "#999"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_adminlines"}
+      },
+      "mark": {"type": "geoshape", "fill": "none", "stroke": "#333"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_adminpoints"}
+      },
+      "mark": {"type": "point", "color": "red", "size": 50}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "selection"}
+      },
+      "mark": {"type": "geoshape", "fill": "none", "stroke": "blue"}
+    }
+  ]
+}
