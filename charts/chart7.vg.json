@@ -11,13 +11,13 @@
       "as": "Displacements"
     }
   ],
-  "columns": 3,
+  "columns": 2,
   "facet": {
     "field": "Year",
     "type": "ordinal"
   },
   "spec": {
-    "width": 350,
+    "width": 220,
     "height": 250,
     "projection": {"type": "mercator"},
     "layer": [
