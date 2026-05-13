@@ -9,7 +9,7 @@ var chart6 = "charts/chart6.vg.json";
 var chart9 = "charts/chart9.vg.json";
 var chart10 = "charts/chart10.vg.json";
 
-
+var chart12 = "charts/chart12.vg.json";
 var chart13 = "charts/chart13.vg.json";
 var chart14 = "charts/chart14.vg.json";
 
@@ -32,6 +32,9 @@ vegaEmbed('#chart9', chart9).then(function(result) {
 }).catch(console.error);
 
 vegaEmbed('#chart10', chart10).then(function(result) {
+}).catch(console.error);
+
+vegaEmbed('#chart12', chart12).then(function(result) {
 }).catch(console.error);
 
 vegaEmbed('#chart13', chart13).then(function(result) {
