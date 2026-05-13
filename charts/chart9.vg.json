@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Annual Dengue Infections",
+    "subtitle": "Malaysia (2002–2019) - Each icon represents 10,000 infections"
+  },
+  "width": 600,
+  "height": 450,
+  "data": {
+    "url": "data/observed-timeseries-of-a.csv"
+  },
+  "transform": [
+    {
+      "calculate": "ceil(datum['Number of Dengue Infections'] / 50000)",
+      "as": "scaled_count"
+    },
+    {
+      "calculate": "sequence(1, datum.scaled_count + 1)",
+      "as": "icon_index"
+    },
+    {
+      "flatten": ["icon_index"]
+    }
+  ],
+  "mark": {
+    "type": "image",
+    "width": 25,
+    "height": 25
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "icon_index",
+      "type": "quantitative",
+      "title": "Infections (Stacked Icons)",
+      "scale": {"domain": [0, 15]}, 
+      "axis": {"tickMinStep": 1}
+    },
+    "url": {
+      "value": "https://img.icons8.com/emoji/48/000000/mosquito-emoji.png"
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal"},
+      {"field": "Number of Dengue Infections", "type": "quantitative", "title": "Total Cases"}
+    ]
+  }
+}
