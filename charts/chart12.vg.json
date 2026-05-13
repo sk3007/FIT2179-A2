@@ -1,0 +1,62 @@
+{
+  "title": "Power Stations in Malaysia",  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1300,
+  "height": 500,
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_admin0"}
+      },
+      "mark": {"type": "geoshape", "fill": "#ddd", "stroke": "black"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "mys_admin1"}
+      },
+      "mark": {"type": "geoshape", "fill": "#e6e7e8", "stroke": "black"}
+    },
+    {
+      "data": {
+        "url": "data/output (2).topojson",
+        "format": {"type": "topojson", "feature": "selection"}
+      },
+      "mark": {"type": "geoshape", "fill": "#ffffff", "stroke": "black"}
+    },
+    {
+      "data": {
+        "url": "data/power_stations.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {
+          "calculate": "parseFloat(replace(datum.Output, ' MW', ''))",
+          "as": "Capacity"
+        },
+        {
+          "calculate": "indexof(['hydro','solar','wind'], datum.Source) >= 0 ? 'Renewable' : 'Non-Renewable'",
+          "as": "EnergyType"
+        }
+      ],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+
+        "color": {
+          "field": "EnergyType",
+          "type": "nominal",
+          "scale": {"domain": ["Renewable", "Non-Renewable"], "range": ["green", "brown"]},
+          "title": "Energy Type"
+        },
+        "tooltip": [
+          {"field": "Output"},
+          {"field": "Source"}
+        ]
+      }
+    }
+  ]
+}
