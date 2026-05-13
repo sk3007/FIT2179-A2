@@ -10,21 +10,21 @@
         "url": "data/output (2).topojson",
         "format": {"type": "topojson", "feature": "mys_admin0"}
       },
-      "mark": {"type": "geoshape", "fill": "#ddd", "stroke": "black"}
+      "mark": {"type": "geoshape", "fill": "#d7ded7", "stroke": "black"}
     },
     {
       "data": {
         "url": "data/output (2).topojson",
         "format": {"type": "topojson", "feature": "mys_admin1"}
       },
-      "mark": {"type": "geoshape", "fill": "#e6e7e8", "stroke": "black"}
+      "mark": {"type": "geoshape", "fill": "#d7ded7", "stroke": "black"}
     },
     {
       "data": {
         "url": "data/output (2).topojson",
         "format": {"type": "topojson", "feature": "selection"}
       },
-      "mark": {"type": "geoshape", "fill": "#ffffff", "stroke": "black"}
+      "mark": {"type": "geoshape", "fill": "#edecec", "stroke": "white"}
     },
     {
       "data": {
