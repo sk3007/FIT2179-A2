@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 800,
+  "title": {
+    "text": "Direct Economic Loss Attributed to Disasters in Malaysia",
+    "subtitle": "2005 - 2024 (with Trendline)"
+  },
+  "data": {
+    "url": "data/direct-disaster-economic-loss.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "point": {
+          "filled": true,
+          "fill": "white",
+          "size": 50
+        },
+        "strokeWidth": 2,
+        "color": "#c0392b"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "axis": {
+            "format": "d",
+            "title": "Year"
+          },
+          "scale": {"zero": false}
+        },
+        "y": {
+          "field": "Direct economic loss attributed to disasters (current United States dollars)",
+          "type": "quantitative",
+          "title": "Economic Loss (USD)",
+          "axis": {
+            "format": "$,.0f"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Year", 
+            "type": "quantitative", 
+            "title": "Year"
+          },
+          {
+            "field": "Direct economic loss attributed to disasters (current United States dollars)", 
+            "type": "quantitative", 
+            "title": "Loss (USD)", 
+            "format": "$,.0f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Direct economic loss attributed to disasters (current United States dollars)",
+          "on": "Year"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#2980b9",
+        "strokeDash": [5, 5],
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Direct economic loss attributed to disasters (current United States dollars)",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Direct economic loss attributed to disasters (current United States dollars)", 
+            "type": "quantitative", 
+            "title": "Trend Expected Loss", 
+            "format": "$,.0f"
+          }
+        ]
+      }
+    }
+  ]
+}
