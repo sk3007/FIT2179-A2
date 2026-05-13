@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Disaster Internal Displacements in Malaysia (2021-2024)",
+  "data": {
+    "url": "data/IDMC_GIDD_Disasters_Internal_Displacement_Data_with_Locality.csv"
+  },
+  "transform": [
+    {"filter": "datum.Year >= 2019 && datum.Year <= 2024"},
+    {
+      "calculate": "toNumber(datum['Disaster Internal Displacements (Raw)'])",
+      "as": "Displacements"
+    }
+  ],
+  "columns": 3,
+  "facet": {
+    "field": "Year",
+    "type": "ordinal"
+  },
+  "spec": {
+    "width": 350,
+    "height": 250,
+    "projection": {"type": "mercator"},
+    "layer": [
+      {
+        "data": {
+          "url": "data/output (3).topojson",
+          "format": {"type": "topojson", "feature": "mys_admin1"}
+        },
+        "mark": {"type": "geoshape", "fill": "#d4dad1", "stroke": "black"}
+      },
+      {
+        "data": {
+          "url": "data/output (3).topojson",
+          "format": {"type": "topojson", "feature": "mys_admin2"}
+        },
+        "mark": {"type": "geoshape", "fill": "none", "stroke": "#000000"}
+      },
+      {
+        "data": {
+          "url": "data/output (3).topojson",
+          "format": {"type": "topojson", "feature": "mys_adminlines"}
+        },
+        "mark": {"type": "geoshape", "fill": "none", "stroke": "#000000"}
+      },
+      {
+        "data": {
+          "url": "data/output (3).topojson",
+          "format": {"type": "topojson", "feature": "selection"}
+        },
+        "mark": {"type": "geoshape", "fill": "#e8e8e8", "stroke": "white"}
+      },
+      {
+        "mark": {"type": "circle", "opacity": 0.6},
+        "encoding": {
+          "longitude": {"field": "Longtitude", "type": "quantitative"},
+          "latitude": {"field": "Latitude", "type": "quantitative"},
+          "size": {
+            "aggregate": "sum",
+            "field": "Displacements",
+            "type": "quantitative",
+            "scale": {"type": "linear", "range": [5, 2000]},
+            "title": "People Displaced"
+          },
+          "color": {"value": "#5290b9"},
+          "tooltip": [
+            {"field": "locality", "title": "Locality"},
+            {"field": "Displacements", "title": "Displaced"}
+          ]
+        }
+      }
+    ]
+  }
+}
