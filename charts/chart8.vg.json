@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
-  "height": 800,
+  "width": "container",
+  "height": "container",
   "title": {
     "text": "Direct Economic Loss Attributed to Disasters in Malaysia",
     "subtitle": "2005 - 2024 (with Trendline)"

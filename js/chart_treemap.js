@@ -1,10 +1,6 @@
 /* ============================================================
    chart_treemap.js
    Malaysia GDP by Economic Activity — Highcharts Treemap
-   Requires:
-     - https://code.highcharts.com/highcharts.js  (already in page)
-     - https://code.highcharts.com/modules/treemap.js
-     - https://code.highcharts.com/modules/heatmap.js  (for colour scale)
    ============================================================ */
 
 (function () {
@@ -12,13 +8,14 @@
   const CSV_PATH = 'data/malaysia_gdp_treemap.csv';
 
   /* ---------- colour palette per top-level sector ---------- */
+  /* Updated to be color-blind friendly. No red or green. */
   const SECTOR_COLOURS = {
-    'Agriculture':          '#2d6a4f',
-    'Mining and quarrying': '#3d2605',
-    'Manufacturing':        '#457b9d',
-    'Construction':         '#e07a5f',
-    'Services':             '#3d405b',
-    'plus Import duties':   '#81b29a',
+    'Agriculture':          '#008080', /* Teal instead of green */
+    'Mining and quarrying': '#b06000', /* Dark orange/brown */
+    'Manufacturing':        '#457b9d', /* Blue */
+    'Construction':         '#6a4c93', /* Purple instead of red */
+    'Services':             '#3d405b', /* Slate/Dark Blue */
+    'plus Import duties':   '#8ecae6', /* Light Blue instead of green */
   };
 
   /* ---------- parse CSV text into an array of objects ---------- */
@@ -26,7 +23,6 @@
     const lines = text.trim().split('\n');
     const headers = lines[0].split(',').map(h => h.trim());
     return lines.slice(1).map(line => {
-      // simple split — values contain no commas (all numeric / short strings)
       const cols = line.split(',');
       const obj = {};
       headers.forEach((h, i) => { obj[h] = cols[i] ? cols[i].trim() : ''; });
@@ -39,48 +35,36 @@
   /* ---------- build Highcharts data array for one year ---------- */
   function buildSeriesData(rows, year) {
     const yearRows = rows.filter(r => r.year === year);
-
-    // Highcharts treemap needs: id, name, parent, value, color
-    // id must be unique — we use the code field
-    // parent must reference another id (or '' for root)
-    // Only include level-1 and level-2 nodes (level-3 makes it too dense);
-    // swap in level-3 leaves when level-2 has children, keeping level-2 as
-    // a group node (no value of its own — Highcharts sums children).
-
     const data = [];
 
-    // root node (invisible, just anchors the tree)
-    data.push({ id: 'root', name: 'GDP', parent: '', color: '#1a1a2e' });
+    data.push({ id: 'root', name: 'GDP', parent: '', color: '#ffffff' });
 
     yearRows.forEach(r => {
-      const color = SECTOR_COLOURS[r.parent] || SECTOR_COLOURS[r.name] || '#555';
-
       if (r.level === 1) {
         data.push({
           id: r.code,
           name: r.name,
           parent: 'root',
           value: r.value,
-          color: SECTOR_COLOURS[r.name] || '#555',
+          color: SECTOR_COLOURS[r.name] || '#94a3b8',
         });
       } else if (r.level === 2) {
         data.push({
           id: r.code,
           name: r.name,
-          parent: r.code.split('.')[0],   // e.g. "1.1" → parent id "1"
+          parent: r.code.split('.')[0],
           value: r.value,
-          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#555')
+          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
                            .brighten(0.15).get(),
         });
       } else if (r.level === 3) {
-        // parent id is the L2 code, e.g. "1.3.1" → "1.3"
         const parentCode = r.code.split('.').slice(0, -1).join('.');
         data.push({
           id: r.code,
           name: r.name,
           parent: parentCode,
           value: r.value,
-          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#555')
+          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
                            .brighten(0.3).get(),
         });
       }
@@ -105,7 +89,7 @@
       <div class="tm-wrapper">
         <div class="tm-header">
           <div class="tm-titles">
-            <h2 class="tm-title">Malaysia GDP by Economic Activity</h2>
+            <h3 class="tm-title">Malaysia GDP by Economic Activity</h3>
             <p class="tm-subtitle">Constant 2010 Prices &nbsp;·&nbsp; RM Million</p>
           </div>
           <div class="tm-controls">
@@ -116,14 +100,14 @@
         <div id="tm-chart-container"></div>
       </div>`;
 
-    /* --- scoped styles injected once --- */
     if (!document.getElementById('tm-styles')) {
       const style = document.createElement('style');
       style.id = 'tm-styles';
       style.textContent = `
         .tm-wrapper {
-          font-family: 'Georgia', serif;
-          padding: 24px 28px 16px;
+          font-family: 'Inter', sans-serif;
+          background: #ffffff;
+          padding: 10px 0;
         }
         .tm-header {
           display: flex;
@@ -131,20 +115,18 @@
           justify-content: space-between;
           flex-wrap: wrap;
           gap: 16px;
-          margin-bottom: 18px;
+          margin-bottom: 15px;
         }
         .tm-title {
           margin: 0 0 4px;
-          font-size: 1.25rem;
-          font-weight: 700;
-          color: #000000;
-          letter-spacing: 0.01em;
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #0f172a;
         }
         .tm-subtitle {
           margin: 0;
-          font-size: 0.78rem;
-          color: #a09a88;
-          letter-spacing: 0.06em;
+          font-size: 0.85rem;
+          color: #64748b;
           text-transform: uppercase;
         }
         .tm-controls {
@@ -154,21 +136,20 @@
           gap: 6px;
         }
         .tm-year-label {
-          font-size: 0.85rem;
-          color: #c8c0a8;
-          font-family: 'Georgia', serif;
+          font-size: 0.9rem;
+          color: #475569;
         }
         #tm-year-display {
           font-weight: 700;
-          color: #000000;
-          font-size: 1rem;
+          color: #0f172a;
+          font-size: 1.1rem;
         }
         .tm-slider {
           -webkit-appearance: none;
           width: 200px;
-          height: 4px;
-          border-radius: 2px;
-          background: #2a2a3e;
+          height: 6px;
+          border-radius: 3px;
+          background: #e2e8f0;
           outline: none;
           cursor: pointer;
         }
@@ -177,29 +158,20 @@
           width: 18px;
           height: 18px;
           border-radius: 50%;
-          background: #000000;
+          background: #3b82f6;
           cursor: pointer;
-          box-shadow: 0 0 6px rgba(245,200,66,0.5);
         }
         .tm-slider::-moz-range-thumb {
           width: 18px;
           height: 18px;
           border-radius: 50%;
-          background: #000000;
+          background: #3b82f6;
           cursor: pointer;
           border: none;
         }
         #tm-chart-container {
-          border-radius: 8px;
-          overflow: hidden;
-          height: 700px;
-        }
-        .tm-note {
-          margin: 10px 0 0;
-          font-size: 0.72rem;
-          color: #5a5468;
-          text-align: center;
-          letter-spacing: 0.04em;
+          height: 600px;
+          width: 100%;
         }
       `;
       document.head.appendChild(style);
@@ -221,11 +193,11 @@
         const rows = parseCSV(text);
         const years = ['2010', '2011', '2012', '2013', '2014', '2015', '2016e', '2017p'];
 
-        /* --- render chart --- */
         const chart = Highcharts.chart('tm-chart-container', {
           chart: {
-            style: { fontFamily: "'Georgia', serif" },
+            style: { fontFamily: "'Inter', sans-serif" },
             animation: { duration: 400 },
+            backgroundColor: 'transparent'
           },
           title: { text: null },
           credits: { enabled: false },
@@ -236,17 +208,7 @@
             layoutAlgorithm: 'squarified',
             allowDrillToNode: true,
             animationLimit: 1000,
-            dataLabels: {
-              enabled: false,
-
-              // style: {
-              //   fontSize: '18px',
-              //   fontWeight: '50',
-              //   fontFamily: "'Georgia', serif",
-              //   textOutline: '1px #12121f',
-              //   color: '#fff',
-              // },
-            },
+            dataLabels: { enabled: false },
             levelIsConstant: false,
             levels: [
               {
@@ -258,15 +220,14 @@
                   overflow: 'hidden',
                   allowOverlap: false,
                   formatter: function () {
-                    // percentage relative to root GDP
                     const total = this.series.points.find(p => p.id === 'root').value;
                     const pct = (this.point.value / total * 100).toFixed(1);
                     return this.point.name + ' (' + pct + '%)';
                   },
-                  style: { fontSize: '16px', fontWeight: '1000', color: '#000000',  },
+                  style: { fontSize: '15px', fontWeight: '700', color: '#ffffff', textOutline: 'none' },
                 },
-                borderWidth: 3,
-                borderColor: '#0f0f1a',
+                borderWidth: 2,
+                borderColor: '#ffffff',
               },
               {
                 level: 2,
@@ -278,48 +239,37 @@
                   formatter: function () {
                     const parentNode = this.point.node.parent;
                     const parentValue = parentNode && parentNode.childrenTotal;
-                    if (!parentValue) return this.point.name; // fallback if undefined
-
+                    if (!parentValue) return this.point.name;
                     const pct = (this.point.value / parentValue * 100).toFixed(1);
                     return this.point.name + ' (' + pct + '%)';
                   },
-                  style: { fontSize: '10px', fontweight: '50', color: '#ffffff' } },
-                borderWidth: 2,
-                borderColor: '#0f0f1a',
+                  style: { fontSize: '11px', fontWeight: '400', color: '#ffffff', textOutline: 'none' } 
+                },
+                borderWidth: 1,
+                borderColor: '#ffffff',
               },
               {
                 level: 3,
-                dataLabels: { enabled: false,
-                  formatter: function () {
-                    const parentNode = this.point.node.parent;
-                    const parentValue = parentNode && parentNode.childrenTotal;
-                    if (!parentValue) return this.point.name; // fallback if undefined
-
-                    const pct = (this.point.value / parentValue * 100).toFixed(1);
-                    return this.point.name + ' (' + pct + '%)';
-                  },
-                 },
-                borderWidth: 1,
-                borderColor: '#0f0f1a',
+                dataLabels: { enabled: false },
+                borderWidth: 0.5,
+                borderColor: '#ffffff',
               },
             ],
             data: buildSeriesData(rows, years[0]),
           }],
 
           tooltip: {
-            backgroundColor: '#1e1e30',
-            borderColor: '#3a3a50',
-            borderRadius: 8,
-            style: { color: '#f0ece0', fontSize: '13px' },
+            backgroundColor: '#ffffff',
+            borderColor: '#cbd5e1',
+            borderRadius: 6,
+            style: { color: '#1e293b', fontSize: '13px', fontFamily: "'Inter', sans-serif" },
             formatter: function () {
               if (!this.point.value) return false;
-              return '<b>' + this.point.name + '</b><br/>' +
-                     fmtRM(this.point.value);
+              return '<b>' + this.point.name + '</b><br/>' + fmtRM(this.point.value);
             },
           },
         });
 
-        /* --- slider interaction --- */
         const slider  = document.getElementById('tm-year-slider');
         const display = document.getElementById('tm-year-display');
 
@@ -331,12 +281,11 @@
       })
       .catch(err => {
         const host = document.getElementById('tm-chart-container') || document.getElementById(containerId);
-        if (host) host.innerHTML = '<p style="color:#e07a5f;padding:20px">Error loading chart: ' + err.message + '</p>';
+        if (host) host.innerHTML = '<p style="color:#6a4c93;padding:20px">Error loading chart: ' + err.message + '</p>';
         console.error('chart_treemap.js:', err);
       });
   }
 
-  /* ---------- expose globally ---------- */
   window.initTreemap = init;
 
 })();

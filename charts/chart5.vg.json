@@ -6,8 +6,8 @@
     "anchor": "start",
     "fontSize": 16
   },
-  "width": 600,
-  "height": 400,
+  "width": "container",
+  "height": "container",
   "data": {
     "url": "data/viz6(1).csv"
   },

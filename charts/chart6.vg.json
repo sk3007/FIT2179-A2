@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Bubble chart showing relationship between temperature, precipitation, and sea level change.",
-  "width": 800,
-  "height": 500,
+  "width": "container",
+  "height": "container",
   "title": {
     "text": "Temperature, Precipitation, and Sea Level Trends (1992-2024)",
     "subtitle": "Bubble Size = Annual Precipitation | Color = Sea Level Change",
@@ -20,7 +20,7 @@
         "x": { "field": "Date", "type": "quantitative", "title": "Year" },
         "x2": { "field": "Date_end" },
         "y": { "value": 0 },
-        "y2": { "value": 500 },
+        "y2": { "value": "height"},
         "color": {
           "field": "ONI Type",
           "type": "nominal",

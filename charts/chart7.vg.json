@@ -1,6 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Disaster Internal Displacements in Malaysia (2021-2024)",
+  "title": {
+    "text": "Disaster Internal Displacements in Malaysia (2019-2024)",
+    "anchor": "start",
+    "fontSize": 16
+  },
   "data": {
     "url": "data/IDMC_GIDD_Disasters_Internal_Displacement_Data_with_Locality.csv"
   },
@@ -11,13 +15,13 @@
       "as": "Displacements"
     }
   ],
-  "columns": 2,
   "facet": {
     "field": "Year",
     "type": "ordinal"
   },
+  "columns": 2,
   "spec": {
-    "width": 220,
+    "width": 280,
     "height": 250,
     "projection": {"type": "mercator"},
     "layer": [

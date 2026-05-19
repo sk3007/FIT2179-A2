@@ -8,7 +8,6 @@ var chart7 = "charts/chart7.vg.json";
 var chart8 = "charts/chart8.vg.json";
 var chart9 = "charts/chart9.vg.json";
 var chart10 = "charts/chart10.vg.json";
-
 var chart12 = "charts/chart12.vg.json";
 var chart13 = "charts/chart13.vg.json";
 var chart14 = "charts/chart14.vg.json";

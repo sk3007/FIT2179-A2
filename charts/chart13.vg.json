@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Malaysia Renewable Energy Supply by Fuel Type ",
-  "height": 300,
+  "height": "container",
+  "width": "container",
   "data": { "url": "data/Primary_Energy_Supply_by_Fuel_Type.csv" },
   "transform": [
     {

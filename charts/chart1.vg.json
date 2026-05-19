@@ -5,7 +5,7 @@
     "anchor": "start",
     "fontSize": 16
   },
-  "width": 1500,
+  "width": "container",
   "height": 500,
   "data": {
     "url": "data/co2-emissions-and-gdp.csv"

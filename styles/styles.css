@@ -1,0 +1,98 @@
+/* classes */
+.full-width {
+    width: 100%;
+    height: 100%;
+}
+
+.half-width {
+    width: 49%;
+    height: 100%;
+}
+
+.section-container {
+    margin-bottom: 40px; 
+}
+
+.section-internal-container {
+    margin-bottom: 40px;
+}
+
+
+/* class ids */
+#causes {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 400px; 
+}
+
+#observations {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 400px; 
+}
+
+#effects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 1500px; 
+}
+
+#disaster-displacements {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 60%;
+}
+
+#other-effects {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 40%;
+}
+
+#outlook {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 1500px; 
+}
+
+#power-stations {
+    width: 100%;
+    height: 50%;
+}
+
+#renewable-energy {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 30%;
+}
+
+#economy {
+    width: 100%;
+    height: 20%;
+}
+
+/* graph ids */
+#chart13 {
+    width: 75%;
+    height: 100%;
+}
+#chart14 {
+    width: 25%;
+    height: 100%;
+}

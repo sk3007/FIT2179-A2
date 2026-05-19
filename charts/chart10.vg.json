@@ -4,8 +4,8 @@
     "text": "Consume Price Index vs. Number of Hot Days (T-max > 30°C)",
     "subtitle": "Colour indicates crop yield (tonnes per hectare)"
   },
-  "width": 600,
-  "height": 450,
+  "width": "container",
+  "height": "container",
   "data": {
     "url": "data/observed-timeseries-of-a.csv"
   },

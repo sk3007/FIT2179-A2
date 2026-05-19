@@ -1,8 +1,8 @@
 {
   "title": "Power Stations in Malaysia",  
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1300,
-  "height": 500,
+  "width": "container",
+  "height": "container",
   "projection": {"type": "mercator"},
   "layer": [
     {

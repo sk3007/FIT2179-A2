@@ -14,26 +14,48 @@
     <script src="https://code.highcharts.com/modules/treemap.js"></script>
     <script src="js/chart_treemap.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
     <title>Climate Change in Malaysia: Causes and Impacts</title>
 </head>
 
 <body>
     <h1>Climate Change in Malaysia: Causes and Impacts</h1>
     <div class="container">
-        <div id="chart1"></div>
-        <div id="chart2"></div>
-        <!-- <div id="chart3"></div> -->
-        <div id="chart4"></div>
-        <div id="chart5"></div>
-        <div id="chart6"></div>
-        <div id="chart7"></div>
-        <div id="chart8"></div>
-        <div id="chart9"></div>
-        <div id="chart10"></div>
-        <div id="chart12"></div>
-        <div id="chart13"></div>
-        <div id="chart14"></div>
-        <div id="chart_treemap"></div>
+        <div class="section-container">
+            <div id="chart1" class="full-width"></div>
+        </div>
+        <div id="causes" class="section-container">
+            <div id="chart2" class="half-width"></div>
+            <!-- <div id="chart3"></div> -->
+            <div id="chart4" class="half-width"></div>
+        </div>
+        <div id="observations" class="section-container">
+            <div id="chart5" class="half-width"></div>
+            <div id="chart6" class="half-width"></div>
+        </div>
+        <div id="effects" class="section-container">
+            <div id="disaster-displacements" class="section-internal-container">
+                <div id="chart7" class="half-width"></div>
+                <div id="chart8" class="half-width"></div>
+            </div>
+            <div id="other-effects" class="section-internal-container">
+                <div id="chart9" class="half-width"></div>
+                <div id="chart10" class="half-width"></div>
+            </div>
+        </div>
+        <div id="outlook" class="section-container">
+            <div id="power-stations" class="section-internal-container">
+                <div id="chart12" class="full-width"></div>
+            </div>
+            <div id="renewable-energy" class="section-internal-container">
+                <div id="chart13"></div>
+                <div id="chart14"></div>
+            </div>
+            <div id="economy" class="section-internal-container">
+                <div id="chart_treemap" class="full-width"></div>
+            </div>
+        </div>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             window.initTreemap('chart_treemap');
