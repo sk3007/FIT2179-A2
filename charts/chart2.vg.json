@@ -81,7 +81,13 @@
             "domain": [1000, 5000, 10000, 20000, 30000, 50000, 100000, 200000],
             "scheme": "yelloworangebrown"
           },
-          "title": "Loss (Hectares)"
+          "title": null,
+          "legend": {
+            "title": "Loss (Hectares)",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 400
+          }
         },
         "tooltip": [
           {"field": "adm1", "type": "nominal", "title": "State"},

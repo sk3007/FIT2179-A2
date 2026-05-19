@@ -5,8 +5,15 @@
 }
 
 .half-width {
-    width: 49%;
+    flex: 1;
+    min-width:0;
     height: 100%;
+}
+
+.chart-row {
+    display: flex;
+    gap: 20px;
+    width: 100%
 }
 
 .section-container {
@@ -20,6 +27,17 @@
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.section-header {
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
 }
 
 
