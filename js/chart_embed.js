@@ -1,52 +1,55 @@
-var chart1 = "charts/chart1.vg.json";
-var chart2 = "charts/chart2.vg.json";
-var chart3 = "charts/chart3.vg.json";
-var chart4 = "charts/chart4.vg.json";
-var chart5 = "charts/chart5.vg.json";
-var chart6 = "charts/chart6.vg.json";
-var chart7 = "charts/chart7.vg.json";
-var chart8 = "charts/chart8.vg.json";
-var chart9 = "charts/chart9.vg.json";
-var chart10 = "charts/chart10.vg.json";
-var chart12 = "charts/chart12.vg.json";
-var chart13 = "charts/chart13.vg.json";
-var chart14 = "charts/chart14.vg.json";
+// 1. Define your global Vega-Lite configuration
+const globalEmbedOptions = {
+    config: {
+        // Sets the default font for all text, titles, and labels across the chart
+        font: "Times New Roman, serif", 
+        
+        // Specific styling applied only to chart titles
+        title: {
+            fontSize: 18,
+            fontWeight: "bold",
+            color: "#333333",
+            anchor: "start",
+            subtitleFontSize: 14,
+        },
+        
+        // Optional: Uniform styling for axes
+        axis: {
+            labelFont: "Arial, sans-serif",
+            titleFont: "Arial, sans-serif",
+            titleFontSize: 12,
+            labelFontSize: 10
+        },
+        
+        // Optional: Uniform styling for legends
+        legend: {
+            titleFont: "Arial, sans-serif",
+            labelFont: "Arial, sans-serif",
+            titleFontSize: 12,
+            labelFontSize: 10
+        }
+    }
+};
 
-vegaEmbed('#chart1', chart1).then(function(result) {
-}).catch(console.error);
+// 2. Map your chart containers to their JSON specification paths
+const charts = [
+    { id: '#chart1', path: 'charts/chart1.vg.json' },
+    { id: '#chart2', path: 'charts/chart2.vg.json' },
+    // { id: '#chart3', path: 'charts/chart3.vg.json' },
+    { id: '#chart4', path: 'charts/chart4.vg.json' },
+    { id: '#chart5', path: 'charts/chart5.vg.json' },
+    { id: '#chart6', path: 'charts/chart6.vg.json' },
+    { id: '#chart7', path: 'charts/chart7.vg.json' },
+    { id: '#chart8', path: 'charts/chart8.vg.json' },
+    { id: '#chart9', path: 'charts/chart9.vg.json' },
+    { id: '#chart10', path: 'charts/chart10.vg.json' },
+    { id: '#chart12', path: 'charts/chart12.vg.json' },
+    { id: '#chart13', path: 'charts/chart13.vg.json' },
+    { id: '#chart14', path: 'charts/chart14.vg.json' }
+];
 
-vegaEmbed('#chart2', chart2).then(function(result) {
-}).catch(console.error);
-
-// vegaEmbed('#chart3', chart3).then(function(result) {
-// }).catch(console.error);
-
-vegaEmbed('#chart4', chart4).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart5', chart5).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart6', chart6).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart7', chart7).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart8', chart8).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart9', chart9).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart10', chart10).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart12', chart12).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart13', chart13).then(function(result) {
-}).catch(console.error);
-
-vegaEmbed('#chart14', chart14).then(function(result) {
-}).catch(console.error);
+// 3. Loop through and embed each chart, injecting the global options
+charts.forEach(chart => {
+    vegaEmbed(chart.id, chart.path, globalEmbedOptions)
+        .catch(console.error);
+});

@@ -58,9 +58,7 @@
   "title": {
     "text": {
       "signal": "'Land Usage Trends in ' + Select_State"
-    },
-    "anchor": "start",
-    "fontSize": 18
+    }
   },
   "mark": {
     "type": "area",

@@ -5,9 +5,7 @@
   "height": "container",
   "title": {
     "text": "Temperature, Precipitation, and Sea Level Trends (1992-2024)",
-    "subtitle": "Bubble Size = Annual Precipitation | Color = Sea Level Change",
-    "anchor": "start",
-    "fontSize": 18
+    "subtitle": "Bubble Size = Annual Precipitation | Color = Sea Level Change"
   },
   "layer": [
         {

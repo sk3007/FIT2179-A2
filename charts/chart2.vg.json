@@ -3,8 +3,7 @@
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Tree Cover Loss in Malaysia",
-    "subtitle": "Use the slider below to change the year"
+    "text": "Tree Cover Loss in Malaysia"
   },
   "projection": {
     "type": "mercator"

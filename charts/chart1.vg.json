@@ -1,9 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Growth of GDP vs. CO2 Emissions in Malaysia (1990-2024)",
-    "anchor": "start",
-    "fontSize": 16
+    "text": "Growth of GDP vs. CO2 Emissions in Malaysia (1990-2024)"
   },
   "width": "container",
   "height": 500,

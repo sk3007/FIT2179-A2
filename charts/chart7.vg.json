@@ -1,9 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Disaster Internal Displacements in Malaysia (2019-2024)",
-    "anchor": "start",
-    "fontSize": 16
+    "text": "Disaster Internal Displacements in Malaysia (2019-2024)"
   },
   "data": {
     "url": "data/IDMC_GIDD_Disasters_Internal_Displacement_Data_with_Locality.csv"

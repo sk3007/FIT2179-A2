@@ -2,9 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Number of Days with Heat Index > 35°C",
-    "subtitle": "Monthly anomalies relative to 1990-2000 baseline",
-    "anchor": "start",
-    "fontSize": 16
+    "subtitle": "Monthly anomalies relative to 1990-2000 baseline"
   },
   "width": "container",
   "height": "container",

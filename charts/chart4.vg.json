@@ -5,9 +5,7 @@
   "height": "container",
   "title": {
     "text": "Global Pollutant Gas Emissions (1750-2022)",
-    "subtitle": "Streamgraph showing the volume and composition of emissions over time",
-    "anchor": "start",
-    "fontSize": 18
+    "subtitle": "Streamgraph showing the volume and composition of emissions over time"
   },
   "data": {
     "url": "data/emissions_final_fixed.csv"
