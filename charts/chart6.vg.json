@@ -80,6 +80,10 @@
                 "zero": false,
                 "scheme": "darkblue",
                 "reverse": true
+            },
+            "legend": {
+                "direction": "horizontal",
+                "gradientLength": 100
             }
             },
             "tooltip": [

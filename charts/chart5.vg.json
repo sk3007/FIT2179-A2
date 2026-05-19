@@ -57,7 +57,7 @@
     "color": {
       "field": "Anomaly",
       "type": "quantitative",
-      "title": "Anomaly (Number of Days)",
+      "title": "Number of Days",
       "scale": {
         "scheme": "redyellowblue",
         "reverse": true,
@@ -65,7 +65,7 @@
       },
       "legend": {
         "direction": "vertical",
-        "gradientLength": 200
+        "gradientLength": 300
       }
     },
     "tooltip": [

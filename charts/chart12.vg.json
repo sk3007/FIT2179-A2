@@ -4,6 +4,9 @@
   "width": "container",
   "height": "container",
   "projection": {"type": "mercator"},
+  "autosize": {
+    "type": "fit"
+  },
   "layer": [
     {
       "data": {

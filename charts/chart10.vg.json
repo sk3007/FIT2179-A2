@@ -31,7 +31,10 @@
           "field": "Crop Yield (Tonnes)",
           "type": "quantitative",
           "scale": { "scheme": "greens" },
-          "title": "Crop Yield (Tonnes per Hectare)"
+          "title": null,
+          "legend": {
+            "title" : ["Crop Yield", "(Tons/Hectare)"]
+          }
         },
         "tooltip": [
           { "field": "Year", "type": "ordinal" },

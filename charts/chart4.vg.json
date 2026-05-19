@@ -19,7 +19,7 @@
         "Methane",
         "Nitrogen oxides",
         "Nitrous oxide",
-        "Non-methane volatile organic compounds",
+        "Non-methane hydrocarbons",
         "Organic carbon",
         "Sulfur dioxide",
         "Fine particulate matter"
@@ -37,6 +37,7 @@
     "field": "Year",
     "type": "quantitative",
     "title": "Year",
+    "scale": {"domain": [1946, 2022]},
     "axis": {
         "domain": false,
         "grid": false,
@@ -55,10 +56,13 @@
     "color": {
       "field": "Gas_Type",
       "title": "Pollutant Gas",
-      "scale": {"scheme": "category20b"}
+      "scale": {"scheme": "category20b"},
+      "legend": {
+        "orient": "top-left"
+      }
     },
     "opacity": {
-      "condition": {"param": "hover", "value": 1},
+      "condition": {"param": "selectGas", "value": 1},
       "value": 0.3
     },
     "tooltip": [
@@ -69,12 +73,12 @@
   },
   "params": [
     {
-      "name": "hover",
+      "name": "selectGas",
       "select": {
         "type": "point",
-        "fields": ["Gas_Type"],
-        "on": "mouseover"
-      }
+        "fields": ["Gas_Type"]
+      },
+      "bind": "legend"
     }
   ],
   "config": {
