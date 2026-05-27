@@ -33,7 +33,9 @@
           "scale": { "scheme": "greens" },
           "title": null,
           "legend": {
-            "title" : ["Crop Yield", "(Tons/Hectare)"]
+            "title" : ["Crop Yield", "(Tons/Hectare)"],
+            "orient": "top-left",
+            "direction": "vertical"
           }
         },
         "tooltip": [
