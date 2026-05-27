@@ -4,7 +4,7 @@
     "text": "Growth of GDP vs. CO2 Emissions in Malaysia (1990-2024)"
   },
   "width": "container",
-  "height": 500,
+  "height": "container",
   "data": {
     "url": "data/co2-emissions-and-gdp.csv"
   },
