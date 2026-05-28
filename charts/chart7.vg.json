@@ -15,12 +15,22 @@
   ],
   "facet": {
     "field": "Year",
-    "type": "ordinal"
+    "type": "ordinal",
+    "sort": [2019, 2020, 2021, 2022, 2023, 2024],
+    "header": {
+      "titleFontSize": 16,
+      "titleFontWeight": "bold",
+      "titleFont": "Arial, sans-serif",
+
+      "labelFontSize": 16,
+      "labelFont": "Arial, sans-serif",
+      "labelColor": "#333333"
+    }
   },
-  "columns": 2,
+  "columns": 3,
   "spec": {
-    "width": 280,
-    "height": 250,
+    "width": 400,
+    "height": 270,
     "projection": {"type": "mercator"},
     "layer": [
       {
