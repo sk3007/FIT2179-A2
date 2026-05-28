@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A streamgraph showing pollutant gas emissions from 1750 to 2022.",
+  "description": "A streamgraph showing pollutant gas emissions from 1945 to 2022.",
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Global Pollutant Gas Emissions (1750-2022)",
-    "subtitle": "Streamgraph showing the volume and composition of emissions over time"
+    "text": "Pollutant Gas Emissions in Malaysia (1945-2022)",
+    "subtitle": "Individual gas emissions can be toggled on/off by clicking the legend"
   },
   "data": {
     "url": "data/emissions_final_fixed.csv"
@@ -40,9 +40,9 @@
     "scale": {"domain": [1946, 2022]},
     "axis": {
         "domain": false,
-        "grid": false,
+        "grid": true,
         "format": "d",
-        "tickCount": 10
+        "tickCount": 20
         }   
     },
     "y": {
