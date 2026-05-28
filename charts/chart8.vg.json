@@ -3,8 +3,7 @@
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Direct Economic Loss Attributed to Disasters in Malaysia",
-    "subtitle": "2005 - 2024 (with Trendline)"
+    "text": "Direct Economic Loss Attributed to Disasters in Malaysia"
   },
   "data": {
     "url": "data/direct-disaster-economic-loss.csv"
@@ -29,7 +28,10 @@
             "format": "d",
             "title": "Year"
           },
-          "scale": {"zero": false}
+          "scale": {
+            "zero": false,
+            "domain": [2005, 2024]
+          }
         },
         "y": {
           "field": "Direct economic loss attributed to disasters (current United States dollars)",
@@ -70,7 +72,10 @@
       "encoding": {
         "x": {
           "field": "Year",
-          "type": "quantitative"
+          "type": "quantitative",
+          "scale": {
+            "domain": [2005, 2024]
+          }
         },
         "y": {
           "field": "Direct economic loss attributed to disasters (current United States dollars)",
