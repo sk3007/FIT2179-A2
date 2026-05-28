@@ -3,7 +3,8 @@
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Tree Cover Loss in Malaysia"
+    "text": "Tree Cover Loss in Malaysia",
+    "subtitle": "Annual tree-cover loss as a percentage of state area, 2001-2021"
   },
   "projection": {
     "type": "mercator"
@@ -15,7 +16,7 @@
       "bind": {
         "input": "range",
         "min": 2001,
-        "max": 2021,
+        "max": 2025,
         "step": 1,
         "name": "Select Year: "
       }
@@ -31,14 +32,7 @@
     },
     {
       "data": {
-        "url": "data/output (2).topojson",
-        "format": {"type": "topojson", "feature": "mys_admin1"}
-      },
-      "mark": {"type": "geoshape", "fill": "#ffffff", "stroke": "black", "strokeWidth": 1}
-    },
-    {
-      "data": {
-        "url": "data/treecover_loss_by_region__ha.csv"
+        "url": "data/tree_cover_loss_normalised.csv"
       },
       "transform": [
         {
@@ -74,25 +68,27 @@
           "type": "geojson"
         },
         "color": {
-          "field": "umd_tree_cover_loss__ha",
+          "field": "tree_cover_loss_per_state_area",
           "type": "quantitative",
         "scale": {
             "type": "threshold",
-            "domain": [1000, 5000, 10000, 20000, 30000, 50000, 100000, 200000],
+            "domain": [0.1, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 3],
             "scheme": "yelloworangebrown"
           },
           "title": null,
           "legend": {
-            "title": "Loss (Hectares)",
-            "orient": "bottom",
-            "direction": "horizontal",
-            "gradientLength": 400
+            "title": "Loss\n(% of state area)",
+            "orient": "right",
+            "direction": "vertical",            
+            "gradientLength": 450,
+            "gradientThickness": 14
+
           }
         },
         "tooltip": [
           {"field": "adm1", "type": "nominal", "title": "State"},
           {"field": "umd_tree_cover_loss__year", "type": "quantitative", "title": "Year"},
-          {"field": "umd_tree_cover_loss__ha", "type": "quantitative", "title": "Area Lost (ha)", "format": ",.2f"}
+          {"field": "tree_cover_loss_per_state_area", "type": "quantitative", "title": "Loss (% of state area)", "format": ",.2f"}
         ]
       }
     },
