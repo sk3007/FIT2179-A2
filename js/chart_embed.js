@@ -5,27 +5,36 @@ const globalEmbedOptions = {
     font: "Times New Roman, serif",
 
     title: {
-      fontSize: 18,
+      fontSize: 20,
       fontWeight: "bold",
       color: "#333333",
       anchor: "start",
-      subtitleFontSize: 14
+      subtitleFontSize: 14,
+      offset: 20
     },
 
     axis: {
       labelFont: "Arial, sans-serif",
       titleFont: "Arial, sans-serif",
-      titleFontSize: 12,
-      labelFontSize: 10
+      titleFontSize: 15,
+      labelFontSize: 13
     },
 
     legend: {
       titleFont: "Arial, sans-serif",
       labelFont: "Arial, sans-serif",
-      titleFontSize: 12,
-      labelFontSize: 10
+      titleFontSize: 14,
+      labelFontSize: 12
     },
 
+    text: {
+      font: "Arial, sans-serif",
+      fontSize: 13,
+      fontWeight: "normal",
+      color: "#374151",
+      lineHeight: 16
+    },
+    
     view: {
         stroke: null
     }
