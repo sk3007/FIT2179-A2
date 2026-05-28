@@ -32,13 +32,90 @@
           "field": "Growth Metric",
           "type": "nominal",
           "scale": {"range": ["#1f77b4", "#ff7f0e"]},
-          "legend": {"orient": "bottom", "title": "Growth Metrics"}
+          "legend": {"orient": "right", "title": "Growth Metrics"}
         },
         "tooltip": [
           {"field": "Year", "type": "temporal"},
           {"field": "Growth Metric", "type": "nominal"},
           {"field": "Percentage Increase", "type": "quantitative", "format": ".2f"}
         ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "Year": "2001-01-01",
+            "Annotation": [
+              "2002: GDP and emissions",
+              "rise together, signalling",
+              "that prosperity came with",
+              "a climate cost."
+            ],
+            "yPosition": 300
+          },
+          {
+            "Year": "2016-06-01",
+            "Annotation": [
+              "2020: GDP and emissions",
+              "both dropped as COVID-19",
+              "disrupted economic activity."
+            ],
+            "yPosition": 490
+          },
+          {
+            "Year": "2020-06-01",
+            "Annotation": [
+              "2023: GDP continued rising,",
+              "while emissions dropped,",
+              "suggesting early decoupling",
+              "from carbon-intensive growth."
+            ],
+            "yPosition": 360
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "color": "#374151"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "yPosition",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Annotation"
+        }
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          { "Year": "2002-01-01" },
+          { "Year": "2020-01-01" },
+          { "Year": "2023-01-01" }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 4],
+        "color": "#9ca3af",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        }
       }
     }
   ]
