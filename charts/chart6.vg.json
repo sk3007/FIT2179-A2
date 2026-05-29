@@ -4,11 +4,11 @@
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Temperature, Precipitation, and Sea Level Trends (1992-2024)",
-    "subtitle": "Bubble Size = Annual Precipitation | Color = Sea Level Change"
+    "text": "Temperature, Precipitation, and Sea Level Trends",
+    "subtitle": "Annual readings with respect to ENSO phases"
   },
   "layer": [
-        {
+    {
       "data": { "url": "data/viz2.csv" },
       "transform": [
         { "calculate": "parseFloat(datum.Date) + (1/12)", "as": "Date_end" }
@@ -31,85 +31,182 @@
       }
     },
     {
-        "data": {
-            "url": "data/viz6.csv"
+      "data": {
+        "url": "data/viz6.csv"
+      },
+      "transform": [
+        {
+          "calculate": "datum.Category == 1992 ? datum['Average Mean Surface Air Temperature (°C)'] : null",
+          "as": "temp_1992"
         },
-        "mark": {
-            "type": "circle",
-            "opacity": 0.7,
-            "stroke": "black",
-            "strokeWidth": 0.5
+        {
+          "joinaggregate": [
+            {"op": "max", "field": "temp_1992", "as": "baseline_1992"}
+          ]
         },
-        "encoding": {
-            "x": {
+        {
+          "calculate": "datum['Average Mean Surface Air Temperature (°C)'] - datum.baseline_1992",
+          "as": "Temp_Change_Relative_1992"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.7,
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Category",
+          "type": "quantitative",
+          "title": "Year",
+          "axis": {
+            "format": "d",
+            "tickCount": 10
+          },
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "Temp_Change_Relative_1992",
+          "type": "quantitative",
+          "title": "Temp Change relative to 1992 (°C)",
+          "scale": {
+            "zero": true,
+            "padding": 20,
+            "domain": [-0.0, 1.4]
+          }
+        },
+        "size": {
+          "field": "Sea Level Change",
+          "type": "quantitative",
+          "title": ["Sea Level Rise (mm)", "relative to 1990"],
+          "scale": {
+            "type": "linear",
+            "range": [20, 1000]
+          }
+        },
+        "color": {
+          "field": "Annual Precipitation",
+          "type": "quantitative",
+          "title": "Precipitation (mm)",
+          "scale": {
+            "zero": false,
+            "scheme": "darkblue",
+            "reverse": true
+          },
+          "legend": {
+            "direction": "horizontal",
+            "gradientLength": 100
+          }
+        },
+        "tooltip": [
+          {
             "field": "Category",
             "type": "quantitative",
-            "title": "Year",
-            "axis": {
-                "format": "d",
-                "tickCount": 10
-            },
-            "scale": {
-                "zero": false
-            }
-            },
-            "y": {
+            "title": "Year"
+          },
+          {
             "field": "Average Mean Surface Air Temperature (°C)",
             "type": "quantitative",
-            "title": "Mean Surface Temp (°C)",
-            "scale": {
-                "zero": false,
-                "padding": 20
-            }
-            },
-            "size": {
-            "field": "Sea Level Change",
+            "title": "Absolute Temp (°C)"
+          },
+          {
+            "field": "Temp_Change_Relative_1992",
             "type": "quantitative",
-            "title": "Sea Level Rise (mm)",
-            "scale": {
-                "type": "linear",
-                "range": [20, 1000]
-            }
-            
-            },
-            "color": {
+            "title": "Change from 1992 (°C)",
+            "format": "+,.2f"
+          },
+          {
             "field": "Annual Precipitation",
             "type": "quantitative",
-            "title": "Precipitation (mm)",
-            "scale": {
-                "zero": false,
-                "scheme": "darkblue",
-                "reverse": true
+            "title": "Precipitation (mm)"
+          },
+          {
+            "field": "Sea Level Change",
+            "type": "quantitative",
+            "title": "Sea Level Change (mm)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Category": 2024, "Title": "2024", "text": ["Sea levels has risen 104.90mm", "in the last 30 years."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -200,
+                "dy": -210,
+                "fontWeight": "bold"
             },
-            "legend": {
-                "direction": "horizontal",
-                "gradientLength": 100
+            "encoding": {
+                "x": {"field": "Category", "type": "quantitative"},
+                "text": {"field": "Title", "type": "nominal"}
             }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -200,
+                "dy": -195
             },
-            "tooltip": [
-            {
-                "field": "Category",
-                "type": "quantitative",
-                "title": "Year"
-            },
-            {
-                "field": "Average Mean Surface Air Temperature (°C)",
-                "type": "quantitative",
-                "title": "Temperature (°C)"
-            },
-            {
-                "field": "Annual Precipitation",
-                "type": "quantitative",
-                "title": "Precipitation (mm)"
-            },
-            {
-                "field": "Sea Level Change",
-                "type": "quantitative",
-                "title": "Sea Level Change (mm)",
-                "format": ".2f"
+            "encoding": {
+                "x": {"field": "Category", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"}
             }
-            ]
         }
+      ]
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Category": 2010, "Title": "2010-present", "text": ["Amount of rain has", "been high, regardless of", "ENSO phase leading to", "increased flooding risk."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": 10,
+                "dy": 160,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Category", "type": "quantitative"},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": 10,
+                "dy": 175
+            },
+            "encoding": {
+                "x": {"field": "Category", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
     }
   ],
   "config": {
