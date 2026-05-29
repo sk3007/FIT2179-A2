@@ -12,11 +12,7 @@
     {
       "mark": {
         "type": "bar",
-        "point": {
-          "filled": true,
-          "fill": "white",
-          "size": 50
-        },
+        "size": 20,
         "strokeWidth": 2,
         "color": "#c0392b"
       },
@@ -38,7 +34,7 @@
           "type": "quantitative",
           "title": "Economic Loss (USD)",
           "axis": {
-            "format": "$,.0f"
+            "format": "$,.0s"
           }
         },
         "tooltip": [
@@ -90,6 +86,82 @@
           }
         ]
       }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Year": 2015, "Title": "2015", "text": ["Severe flooding in East Malaysia", "and Peninsular East Coast, affecting", "more than 500,000 people and", "causing significant economic losses."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -150,
+                "dy": -35,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [2005, 2024]}},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -150,
+                "dy": -20
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [2005, 2024]}},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Year": 2021, "Title": "2021", "text": ["Severe flooding in Klang Valley area", "caused by tropical depression.", "Widely noted as an extreme weather", "event linked to climate change."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -230,
+                "dy": -135,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [2005, 2024]}},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -230,
+                "dy": -120
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [2005, 2024]}},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
     }
   ]
 }
