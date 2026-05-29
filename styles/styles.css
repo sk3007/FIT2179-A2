@@ -1,121 +1,389 @@
-/* classes */
-.full-width {
-    width: 100%;
-    height: 100%;
+/* ============================================================
+   styles.css
+   Climate Change in Malaysia — Dashboard Stylesheet
+   ============================================================ */
+
+/* ---------- CSS Variables ---------- */
+:root {
+  --font-serif:    "Georgia", "Times New Roman", serif;
+  --font-sans:     "Arial", "Helvetica Neue", sans-serif;
+
+  --color-bg:          #ffffff;
+  --color-surface:     #f8f9fa;
+  --color-text:        #1a1a2e;
+  --color-text-sub:    #4a4a6a;
+  --color-text-muted:  #6b7280;
+  --color-divider:     #e2e8f0;
+  --color-accent:      #2c5f8a;   
+  --color-accent-warm: #c47a1e;   
+
+  --spacing-xs:   8px;
+  --spacing-sm:  16px;
+  --spacing-md:  32px;
+  --spacing-lg:  56px;
+  --spacing-xl:  80px;
 }
 
-.half-width {
-    flex: 1;
-    min-width:0;
-    height: 100%;
+/* ---------- Reset ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.chart-row {
-    display: flex;
-    gap: 20px;
-    width: 100%
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
-.section-container {
-    margin-bottom: 40px; 
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-.section-internal-container {
-    margin-bottom: 40px;
-}
-
+/* ---------- Page wrapper ---------- */
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* ---------- Hero / Banner ---------- */
+.hero {
+  background-color: var(--color-text);
+  color: #ffffff;
+  padding: var(--spacing-lg) 0 var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-inner {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ---------- Sections & Headers ---------- */
+.section-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header-block {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1.5px solid var(--color-divider);
+}
+
+.section-kicker {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 6px;
 }
 
 .section-header {
-    font-family: "Times New Roman", serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: #333333;
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e2e8f0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+  margin-bottom: 10px;
 }
 
-
-/* class ids */
-#causes {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    height: 450px; 
+.section-narrative {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-text-sub);
+  line-height: 1.8;
+  max-width: 860px;
 }
 
-#observations {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    height: 600px; 
+.subsection-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-text-sub);
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
-#effects {
-    display: flex;
-    justify-content: space-between;
+.section-divider {
+  border: none;
+  border-top: 5px solid var(--color-divider);
+  margin: var(--spacing-md) 0;
+}
+
+.subsection-divider {
+  border: none;
+  border-top: 1.5px solid var(--color-divider);
+  margin: var(--spacing-sm) 0;
+}
+
+/* ============================================================
+   LAYOUT ARCHITECTURE (Robust Flexbox Grid)
+   ============================================================ */
+
+.chart-row {
+  display: flex;
+  gap: var(--spacing-md);
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+  align-items: stretch;
+}
+
+.chart-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* --- Width Utilities --- */
+.full-width {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.half-width {
+  flex: 1; /* 50% split */
+  height: 100%;
+  min-width: 0;
+}
+
+.width-two-thirds {
+  flex: 2; /* 66% split */
+  height: 100%;
+  min-width: 0;
+}
+
+.width-one-third {
+  flex: 1; /* 33% split */
+  height: 100%;
+  min-width: 0;
+}
+
+/* --- Height Utilities --- */
+.row-sm {
+  height: 420px;
+}
+
+.row-md {
+  height: 480px;
+}
+
+.row-lg {
+  height: 540px;
+}
+
+.row-xl {
+  height: 680px;
+}
+
+.row-xxl {
+  height: 900px;
+}
+
+/* ============================================================ */
+
+/* ---------- Chart Internal Elements ---------- */
+.chart-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-caption {
+  font-family: var(--font-sans);
+  font-size: 1.0rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-top: var(--spacing-xs);
+  padding-top: var(--spacing-xs);
+  border-top: 1px solid var(--color-divider);
+}
+
+.chart-annotation {
+  display: inline-block;
+  background: #f0f4f8;
+  border-left: 3px solid var(--color-accent);
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  color: var(--color-text-sub);
+  padding: 6px 12px;
+  margin-top: var(--spacing-xs);
+  border-radius: 0 4px 4px 0;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* ---------- Stat Callouts ---------- */
+.stat-strip {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  margin: var(--spacing-md) 0;
+}
+
+.stat-card {
+  flex: 1 1 160px;
+  background: var(--color-surface);
+  border-top: 3px solid var(--color-accent);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.stat-card__number {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-card__label {
+  font-size: 0.78rem;
+  color: var(--color-text-sub);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.source-note {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ---------- Treemap wrapper override ---------- */
+#tm-chart-container {
+  height: 100% !important;
+  min-height: 600px;
+}
+
+/* ---------- Footer ---------- */
+.page-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-divider);
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-xl);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.page-footer__inner {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+@media (max-width: 900px) {
+  .chart-row {
     flex-direction: column;
-    
-    width: 100%;
-    height: 1500px; 
+    height: auto !important; /* Disables fixed heights on mobile so charts can stack */
+  }
+
+  .half-width, .width-two-thirds, .width-one-third, .full-width {
+    width: 100% !important;
+    height: 400px; /* Gives stacked charts a consistent mobile height */
+  }
+
+  .stat-strip {
+    gap: var(--spacing-sm);
+  }
 }
 
-#disaster-displacements {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    height: 60%;
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .section-header {
+    font-size: 1.2rem;
+  }
 }
 
-#other-effects {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    height: 40%;
+
+
+/* ---------- Side Caption Layout ---------- */
+.chart-block--side-caption {
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  align-items: stretch;
 }
 
-#outlook {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
-    width: 100%;
-    height: 1100px; 
+.chart-block--side-caption > .full-width {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
 }
 
-#power-stations {
-    width: 100%;
-    height: 50%;
+.chart-caption--side {
+  flex: 0 0 220px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: var(--spacing-sm);
+  border-top: none;
+  border-left: 2px solid var(--color-divider);
+  align-self: center;
 }
 
-#renewable-energy {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 100%;
-    height: 30%;
+
+.chart-caption--bottom {
+  align-self: stretch;
+  text-align: left;
+  border-top: 1.5px solid var(--color-divider);
+  padding-left: var(--spacing-md);
 }
 
-#economy {
-    width: 100%;
-    height: 20%;
+#chart2 .vega-bindings {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-/* graph ids */
-#chart13 {
-    width: 71%;
-    height: 100%;
+#chart2-container {
+  height: 500px;
 }
-#chart14 {
-    width: 29%;
-    height: 100%;
+
+#chart2 {
+  height: calc(100% - 40px);
+}
+
+.chart-caption--bottom1 {
+  align-self: stretch;
+  text-align: left;
+  border-top: 1.5px solid var(--color-divider);
+  padding-left: var(--spacing-xl);
+}
+
+.tm-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.tm-subtitle {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.25;
 }
