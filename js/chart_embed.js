@@ -6,10 +6,12 @@ const globalEmbedOptions = {
 
     title: {
       fontSize: 22,
-      fontWeight: "bold",
+      fontWeight: "normal",
+      font: 'Georgia, serif',
       color: "#333333",
       anchor: "start",
       subtitleFontSize: 16,
+      subtitleFontStyle: "italic",
       offset: 20
     },
 
@@ -29,11 +31,11 @@ const globalEmbedOptions = {
     },
 
     text: {
-      font: "Arial, sans-serif",
+      font: "Ubuntu, sans-serif",
       fontSize: 13,
       fontWeight: "normal",
       color: "#374151",
-      lineHeight: 16
+      lineHeight: 17
     },
     
     view: {
@@ -171,7 +173,16 @@ const resizeResponsiveCharts = debounce(() => {
 }, 250);
 
 document.addEventListener("DOMContentLoaded", () => {
-  embedAllCharts().catch(console.error);
+  
+  // 1. Wait for web fonts (like Instrument Serif) to finish downloading
+  document.fonts.ready.then(() => {
+    
+    // 2. Now it is safe to embed the charts with perfect text spacing
+    embedAllCharts().catch(console.error);
 
-  window.addEventListener("resize", resizeResponsiveCharts);
+    // 3. Attach the resize listener
+    window.addEventListener("resize", resizeResponsiveCharts);
+    
+  });
+  
 });
