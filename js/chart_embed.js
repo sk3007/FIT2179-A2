@@ -5,7 +5,7 @@ const globalEmbedOptions = {
     font: "Times New Roman, serif",
 
     title: {
-      fontSize: 24,
+      fontSize: 22,
       fontWeight: "bold",
       color: "#333333",
       anchor: "start",
