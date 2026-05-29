@@ -34,44 +34,48 @@
 
   /* ---------- build Highcharts data array for one year ---------- */
   function buildSeriesData(rows, year) {
-    const yearRows = rows.filter(r => r.year === year);
-    const data = [];
+  const yearRows = rows.filter(r => r.year === year);
+  const data = [];
 
-    data.push({ id: 'root', name: 'GDP', parent: '', color: '#ffffff' });
+  // Calculate total GDP manually for level 1 percentage labels
+  const totalGDP = yearRows
+    .filter(r => r.level === 1)
+    .reduce((sum, r) => sum + r.value, 0);
 
-    yearRows.forEach(r => {
-      if (r.level === 1) {
-        data.push({
-          id: r.code,
-          name: r.name,
-          parent: 'root',
-          value: r.value,
-          color: SECTOR_COLOURS[r.name] || '#94a3b8',
-        });
-      } else if (r.level === 2) {
-        data.push({
-          id: r.code,
-          name: r.name,
-          parent: r.code.split('.')[0],
-          value: r.value,
-          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
-                           .brighten(0.15).get(),
-        });
-      } else if (r.level === 3) {
-        const parentCode = r.code.split('.').slice(0, -1).join('.');
-        data.push({
-          id: r.code,
-          name: r.name,
-          parent: parentCode,
-          value: r.value,
-          color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
-                           .brighten(0.3).get(),
-        });
-      }
-    });
+  yearRows.forEach(r => {
+    if (r.level === 1) {
+      data.push({
+        id: r.code,
+        name: r.name,
+        parent: '', // level 1 sectors are now the top layer
+        value: r.value,
+        color: SECTOR_COLOURS[r.name] || '#94a3b8',
+        totalGDP: totalGDP
+      });
+    } else if (r.level === 2) {
+      data.push({
+        id: r.code,
+        name: r.name,
+        parent: r.code.split('.')[0],
+        value: r.value,
+        color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
+                         .brighten(0.15).get(),
+      });
+    } else if (r.level === 3) {
+      const parentCode = r.code.split('.').slice(0, -1).join('.');
+      data.push({
+        id: r.code,
+        name: r.name,
+        parent: parentCode,
+        value: r.value,
+        color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
+                         .brighten(0.3).get(),
+      });
+    }
+  });
 
-    return data;
-  }
+  return data;
+}
 
   /* ---------- format RM value for tooltip ---------- */
   function fmtRM(v) {
@@ -89,7 +93,7 @@
       <div class="tm-wrapper">
         <div class="tm-header">
           <div class="tm-titles">
-            <h3 class="tm-title">Malaysia GDP by Economic Activity</h3>
+            <p class="tm-title">Malaysia GDP by Economic Activity</p>
             <p class="tm-subtitle">Constant 2010 Prices &nbsp;·&nbsp; RM Million</p>
           </div>
           <div class="tm-controls">
@@ -220,11 +224,19 @@
                   overflow: 'hidden',
                   allowOverlap: false,
                   formatter: function () {
-                    const total = this.series.points.find(p => p.id === 'root').value;
-                    const pct = (this.point.value / total * 100).toFixed(1);
+                    const total = this.series.points
+                      .filter(p => p.node && p.node.level === 1)
+                      .reduce((sum, p) => sum + (p.value || 0), 0);
+
+                    const pct = total ? (this.point.value / total * 100).toFixed(1) : 0;
                     return this.point.name + ' (' + pct + '%)';
                   },
-                  style: { fontSize: '15px', fontWeight: '700', color: '#ffffff', textOutline: 'none' },
+                  style: {
+                    fontSize: '15px',
+                    fontWeight: '700',
+                    color: '#000000',
+                    textOutline: 'none'
+                  },
                 },
                 borderWidth: 2,
                 borderColor: '#ffffff',
