@@ -387,3 +387,9 @@ body {
   color: var(--color-text);
   line-height: 1.25;
 }
+
+
+#vg-tooltip-element {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
