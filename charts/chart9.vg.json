@@ -60,7 +60,7 @@
         "y": {
           "field": "icon_index",
           "type": "quantitative",
-          "title": "Number of Dengue Infections (000s)",
+          "title": "Number of Dengue Infections (0000s)",
           "scale": {"domain": [0, 15]}, 
           "axis": {"tickMinStep": 1}
         },
