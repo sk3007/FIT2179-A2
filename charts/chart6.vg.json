@@ -71,7 +71,7 @@
         "y": {
           "field": "Temp_Change_Relative_1992",
           "type": "quantitative",
-          "title": "Temp Change relative to 1992 (°C)",
+          "title": "Temperature Change relative to 1992 (°C)",
           "scale": {
             "zero": true,
             "padding": 20,
