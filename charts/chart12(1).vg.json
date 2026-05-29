@@ -1,0 +1,323 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Malaysia Renewable Energy Production and Power Station Growth",
+    "subtitle": "Brush the renewable energy timeline to filter stations by year built; lower chart shows renewable production mix"
+  },
+
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding",
+    "resize": true
+  },
+
+  "vconcat": [
+    {
+      "width": "container",
+      "height": 350,
+      "projection": {
+        "type": "mercator"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/output (2).topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "mys_admin1"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#eef2ed",
+            "stroke": "#ffffff"
+          }
+        },
+        {
+          "data": {
+            "url": "data/power_stations_updated.csv"
+          },
+          "transform": [
+            {
+              "calculate": "toNumber(datum.year_build)",
+              "as": "Year"
+            },
+            {
+              "calculate": "toNumber(datum['Output (MW)'])",
+              "as": "Capacity_MW"
+            },
+            {
+              "filter": {
+                "param": "year_brush"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "opacity": 0.72,
+            "stroke": "white",
+            "strokeWidth": 0.8,
+            "size": 80
+          },
+          "encoding": {
+            "longitude": {
+              "field": "Longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "Latitude",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "source_standard",
+              "type": "nominal",
+              "title": "Source Type",
+              "scale": {
+                "domain": [
+                  "Renewable",
+                  "Non-Renewable"
+                ],
+                "range": [
+                  "#2ca25f",
+                  "#de2d26"
+                ]
+              },
+              "legend": {
+                "orient": "bottom-left"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "Name",
+                "type": "nominal",
+                "title": "Power Station"
+              },
+              {
+                "field": "Source",
+                "type": "nominal",
+                "title": "Source"
+              },
+              {
+                "field": "source_standard",
+                "type": "nominal",
+                "title": "Source Type"
+              },
+              {
+                "field": "year_build",
+                "type": "quantitative",
+                "title": "Year Built",
+                "format": "d"
+              },
+              {
+                "field": "Capacity_MW",
+                "type": "quantitative",
+                "title": "Capacity (MW)",
+                "format": ",.1f"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": "container",
+      "height": 65,
+      "title": {
+        "text": "Brush to select year range (shows all stations built in that year range in the map above and details in the area chart below)",
+        "fontSize": 14,
+        "anchor": "middle",
+        "orient":"bottom"
+      },
+      "data": {
+        "url": "data/Primary_Energy_Supply_by_Fuel_Type.csv"
+      },
+      "transform": [
+        {
+          "calculate": "(toNumber(datum['Renewables - Biodiesel']) + toNumber(datum['Renewables - Biogas']) + toNumber(datum['Renewables - Biomass']) + toNumber(datum['Renewables - Hydro Power']) + toNumber(datum['Renewables - Solar']))",
+          "as": "Renewables"
+        }
+      ],
+      "params": [
+        {
+          "name": "year_brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 45
+        },
+        "color": "#238b45",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1978,
+              2022
+            ],
+            "zero": false
+          },
+          "axis": {
+            "format": "d",
+            "title": "Year",
+            "tickCount": 10,
+            "grid": true,
+            "titleFontSize": 12,
+            "titleFontWeight": "normal"
+          }
+        },
+        "y": {
+          "field": "Renewables",
+          "type": "quantitative",
+          "title": "Production (MW)",
+          "axis": {
+            "format": ",.0f",
+            "grid": true,
+            "titleFontSize": 12,
+            "titleFontWeight": "normal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "Renewables",
+            "type": "quantitative",
+            "title": "Total Renewables",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "width": "container",
+      "height": 120,
+      "title": "Renewable Energy Production by Source",
+      "data": {
+        "url": "data/Primary_Energy_Supply_by_Fuel_Type.csv"
+      },
+      "transform": [
+        {
+          "fold": [
+            "Renewables - Biodiesel",
+            "Renewables - Biogas",
+            "Renewables - Biomass",
+            "Renewables - Hydro Power",
+            "Renewables - Solar"
+          ],
+          "as": [
+            "Renewable_Type",
+            "Energy_Value"
+          ]
+        },
+        {
+          "filter": {
+            "param": "year_brush"
+          }
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "scale": {
+            "domain": {
+              "param": "year_brush"
+            }
+          },
+          "axis": {
+            "format": "d",
+            "title": "Year",
+            "tickCount": 8,
+            "grid": true
+          }
+        },
+        "y": {
+          "field": "Energy_Value",
+          "type": "quantitative",
+          "aggregate": "sum",
+          "stack": "zero",
+          "title": "Production (MW)",
+          "axis": {
+            "format": ",.0f"
+          }
+        },
+        "color": {
+          "field": "Renewable_Type",
+          "type": "nominal",
+          "title": "Renewable Source",
+          "scale": {
+            "domain": [
+              "Renewables - Hydro Power",
+              "Renewables - Biodiesel",
+              "Renewables - Biomass",
+              "Renewables - Biogas",
+              "Renewables - Solar"
+            ],
+            "range": [
+              "#3182bd",
+              "#31a354",
+              "#74c476",
+              "#a1d99b",
+              "#fdae6b"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "Renewable_Type",
+            "type": "nominal",
+            "title": "Source"
+          },
+          {
+            "field": "Energy_Value",
+            "type": "quantitative",
+            "title": "Production",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent",
+      "shape": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
