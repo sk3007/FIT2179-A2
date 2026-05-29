@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A streamgraph showing pollutant gas emissions from 1945 to 2022.",
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Pollutant Gas Emissions in Malaysia (1945-2022)",
+    "text": "Pollutant Gas Emissions in Malaysia",
     "subtitle": "Individual gas emissions can be toggled on/off by clicking the legend"
   },
   "data": {
@@ -27,58 +26,141 @@
       "as": ["Gas_Type", "Emission_Value"]
     }
   ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone",
-    "tooltip": true
-  },
-  "encoding": {
-    "x": {
-    "field": "Year",
-    "type": "quantitative",
-    "title": "Year",
-    "scale": {"domain": [1946, 2022]},
-    "axis": {
-        "domain": false,
-        "grid": true,
-        "format": "d",
-        "tickCount": 20
-        }   
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+        "field": "Year",
+        "type": "quantitative",
+        "title": "Year",
+        "scale": {"domain": [1946, 2022]},
+        "axis": {
+            "domain": false,
+            "grid": true,
+            "format": "d",
+            "tickCount": 24
+            }   
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Emission_Value",
+          "type": "quantitative",
+          "title": "Emission Volume",
+          "stack": "center",
+          "axis": null
+        },
+        "color": {
+          "field": "Gas_Type",
+          "title": "Pollutant Gas",
+          "scale": {
+            "scheme": "tableau20"
+          },
+          "legend": {
+            "orient": "top-left"
+          }
+        },
+        "opacity": {
+          "condition": {"param": "selectGas", "value": 1},
+          "value": 0.3
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Gas_Type", "type": "nominal", "title": "Pollutant"},
+          {"field": "Emission_Value", "type": "quantitative", "title": "Amount (tons)", "format": ",.2f"}
+        ]
+      },
+      "params": [
+        {
+          "name": "selectGas",
+          "select": {
+            "type": "point",
+            "fields": ["Gas_Type"]
+          },
+          "bind": "legend"
+        }
+      ]
     },
-    "y": {
-      "aggregate": "sum",
-      "field": "Emission_Value",
-      "type": "quantitative",
-      "title": "Emission Volume",
-      "stack": "center",
-      "axis": null
-    },
-    "color": {
-      "field": "Gas_Type",
-      "title": "Pollutant Gas",
-      "scale": {"scheme": "category20b"},
-      "legend": {
-        "orient": "top-left"
+
+    {
+      "data": {
+        "values": [
+          {"Year": 1970, "text": "1970 Malaysian Industrial Boom"},
+          {"Year": 2016, "text": "2016 Paris Agreement ratified"}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [1946, 2022]}}
       }
     },
-    "opacity": {
-      "condition": {"param": "selectGas", "value": 1},
-      "value": 0.3
-    },
-    "tooltip": [
-      {"field": "Year", "type": "quantitative"},
-      {"field": "Gas_Type", "type": "nominal", "title": "Pollutant"},
-      {"field": "Emission_Value", "type": "quantitative", "title": "Amount", "format": ",.2f"}
-    ]
-  },
-  "params": [
+
     {
-      "name": "selectGas",
-      "select": {
-        "type": "point",
-        "fields": ["Gas_Type"]
+      "data": {
+        "values": [
+          {"Year": 1970, "text": "1970 Malaysian Industrial Boom"}
+        ]
       },
-      "bind": "legend"
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 5,
+        "dy": -160,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [1946, 2022]}},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Year": 2022, "text": "2016 Paris Agreement ratified"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": -275,
+        "dy": -160,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [1946, 2022]}},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Year": 1998, "text": ["Period of sustained increase", "in emissions due to rapid", "industrialisation."]}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 5,
+        "dy": -45
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "quantitative", "scale": {"domain": [1946, 2022]}},
+        "text": {"field": "text", "type": "nominal"}
+      }
     }
   ],
   "config": {
