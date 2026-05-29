@@ -11,6 +11,58 @@
   },
   "layer": [
     {
+      "data": {
+        "values": [
+          {
+            "y_start": 68,
+            "y_end": 100,
+            "x_start": 168,
+            "x_end": 215
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fillOpacity": 0,
+        "stroke": "#000000",
+        "strokeWidth": 0.7,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "x": {"field": "x_start", "type": "quantitative"},
+        "x2": {"field": "x_end"},
+        "y": {"field": "y_start", "type": "quantitative"},
+        "y2": {"field": "y_end"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "y_start": 120,
+            "y_end": 136,
+            "x_start": 203,
+            "x_end": 250
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fillOpacity": 0,
+        "stroke": "#000000",
+        "strokeWidth": 0.7,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "x": {"field": "x_start", "type": "quantitative"},
+        "x2": {"field": "x_end"},
+        "y": {"field": "y_start", "type": "quantitative"},
+        "y2": {"field": "y_end"}
+      }
+    },
+
+    {
       "mark": {
         "type": "point",
         "filled": true,
@@ -20,12 +72,20 @@
         "x": {
           "field": "Number of Hot Days (T-max > 30°C) (days)",
           "type": "quantitative",
-          "title": "Number of Hot Days (T-max > 30°C) (days)"
+          "title": "Number of Hot Days (T-max > 30°C) (days)",
+          "axis": {
+            "grid": true,
+            "gridWidth": 0.5
+          }
         },
         "y": {
           "field": "CPI",
           "type": "quantitative",
-          "title": "Consumer Price Index (CPI)"
+          "title": "Consumer Price Index (CPI)",
+          "axis": {
+            "grid": true,
+            "gridWidth": 0.5
+          }
         },
         "color": {
           "field": "Crop Yield (Tonnes)",
@@ -231,58 +291,6 @@
             }
         }
       ]
-    },
-
-    {
-      "data": {
-        "values": [
-          {
-            "y_start": 68,
-            "y_end": 100,
-            "x_start": 168,
-            "x_end": 215
-          }
-        ]
-      },
-      "mark": {
-        "type": "rect",
-        "fillOpacity": 0,
-        "stroke": "#000000",
-        "strokeWidth": 0.7,
-        "cornerRadius": 4
-      },
-      "encoding": {
-        "x": {"field": "x_start", "type": "quantitative"},
-        "x2": {"field": "x_end"},
-        "y": {"field": "y_start", "type": "quantitative"},
-        "y2": {"field": "y_end"}
-      }
-    },
-
-        {
-      "data": {
-        "values": [
-          {
-            "y_start": 120,
-            "y_end": 136,
-            "x_start": 203,
-            "x_end": 250
-          }
-        ]
-      },
-      "mark": {
-        "type": "rect",
-        "fillOpacity": 0,
-        "stroke": "#000000",
-        "strokeWidth": 0.7,
-        "cornerRadius": 4
-      },
-      "encoding": {
-        "x": {"field": "x_start", "type": "quantitative"},
-        "x2": {"field": "x_end"},
-        "y": {"field": "y_start", "type": "quantitative"},
-        "y2": {"field": "y_end"}
-      }
     }
   ]
 }
