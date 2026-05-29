@@ -6,47 +6,110 @@
   },
   "width": "container",
   "height": "container",
-  "data": {
-    "url": "data/observed-timeseries-of-a.csv"
-  },
-  "transform": [
+  "layer": [
     {
-      "calculate": "ceil(datum['Number of Dengue Infections'] / 50000)",
-      "as": "scaled_count"
+      "data": {
+        "values": [
+          {"start": 2014, "end": 2019}
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "color": "#c0392b",
+        "opacity": 0.1
+      },
+      "encoding": {
+        "x": {
+          "field": "start",
+          "type": "ordinal"
+        },
+        "x2": {
+          "field": "end"
+        }
+      }
     },
     {
-      "calculate": "sequence(1, datum.scaled_count + 1)",
-      "as": "icon_index"
+      "data": {
+        "url": "data/observed-timeseries-of-a.csv"
+      },
+      "transform": [
+        {
+          "calculate": "ceil(datum['Number of Dengue Infections'] / 50000)",
+          "as": "scaled_count"
+        },
+        {
+          "calculate": "sequence(1, datum.scaled_count + 1)",
+          "as": "icon_index"
+        },
+        {
+          "flatten": ["icon_index"]
+        }
+      ],
+      "mark": {
+        "type": "image",
+        "width": 25,
+        "height": 25
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "icon_index",
+          "type": "quantitative",
+          "title": "Number of Dengue Infections (000s)",
+          "scale": {"domain": [0, 15]}, 
+          "axis": {"tickMinStep": 1}
+        },
+        "url": {
+          "value": "https://img.icons8.com/emoji/48/000000/mosquito-emoji.png"
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Number of Dengue Infections", "type": "quantitative", "title": "Total Cases"}
+        ]
+      }
     },
+
     {
-      "flatten": ["icon_index"]
+      "data": {
+        "values": [
+          {"Year": 2014, "Title": "After the 2014-2015 major floods", "text": ["Dengue infections remained high", "with peaks in 2015 and 2019 (major floods)", "reinforcing the link between extreme", "weather events and disease outbreaks."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -270,
+                "dy": -115,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "ordinal"},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -270,
+                "dy": -100
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "ordinal"},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
     }
-  ],
-  "mark": {
-    "type": "image",
-    "width": 25,
-    "height": 25
-  },
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "title": "Year",
-      "axis": {"labelAngle": -45}
-    },
-    "y": {
-      "field": "icon_index",
-      "type": "quantitative",
-      "title": "Number of Dengue Infections (000s)",
-      "scale": {"domain": [0, 15]}, 
-      "axis": {"tickMinStep": 1}
-    },
-    "url": {
-      "value": "https://img.icons8.com/emoji/48/000000/mosquito-emoji.png"
-    },
-    "tooltip": [
-      {"field": "Year", "type": "ordinal"},
-      {"field": "Number of Dengue Infections", "type": "quantitative", "title": "Total Cases"}
-    ]
-  }
+  ]
 }
