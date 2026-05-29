@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Consume Price Index vs. Number of Hot Days (T-max > 30°C)",
+    "text": "Consumer Price Index vs. Number of Hot Days",
     "subtitle": "Colour indicates crop yield (tonnes per hectare)"
   },
   "width": "container",
@@ -41,8 +41,8 @@
         "tooltip": [
           { "field": "Year", "type": "ordinal" },
           { "field": "Production Per Area (Tonnes per Hectare)", "type": "quantitative", "format": ".2f" },
-          { "field": "Number of Dengue Infections", "type": "quantitative" },
-          { "field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative", "format": ".1f" }
+          { "field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative", "format": ".1f" },
+          { "field": "CPI", "type": "quantitative", "format": ".1f" }
         ]
       }
     },
@@ -68,6 +68,169 @@
           "type": "quantitative"
         }
       }
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "start_x": 188,   
+            "start_y": 71,   
+            "end_x": 115,     
+            "end_y": 50      
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {"field": "start_x", "type": "quantitative"},
+        "y": {"field": "start_y", "type": "quantitative"},
+        "x2": {"field": "end_x"},
+        "y2": {"field": "end_y"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Number of Hot Days (T-max > 30°C) (days)": 30, "Title": "2000s", "text": ["Number of hot days were", "low, reinforcing crop production.", "The abundance of crop resources", "kept prices low and affordable."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": 0,
+                "dy": 45,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": 0,
+                "dy": 60
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "start_x": 242,   
+            "start_y": 118,   
+            "end_x": 220,     
+            "end_y": 47      
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {"field": "start_x", "type": "quantitative"},
+        "y": {"field": "start_y", "type": "quantitative"},
+        "x2": {"field": "end_x"},
+        "y2": {"field": "end_y"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Number of Hot Days (T-max > 30°C) (days)": 165, "Title": "Late 2010s", "text": ["Number of hot days kept", "increasing, creating unsuitable", "conditions for crop growth,", "leading to reduced yields", "and higher prices."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -5,
+                "dy": 75,
+                "fontWeight": "bold"
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -5,
+                "dy": 90
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Number of Hot Days (T-max > 30°C) (days)": 30, "Title": "Crop Yield vs. Temperature", "text": ["As extreme heat becomes more frequent,", "crop yields may weaken and lead", "to higher food prices, threatening", "food security and livelihoods."]}
+        ]
+      },
+      "layer": [
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -5,
+                "dy": -120,
+                "fontWeight": "bold",
+                "fontSize": 15
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "Title", "type": "nominal"}
+            }
+        },
+
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "bottom",
+                "dx": -5,
+                "dy": -105
+            },
+            "encoding": {
+                "x": {"field": "Number of Hot Days (T-max > 30°C) (days)", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"}
+            }
+        }
+      ]
     }
   ]
 }

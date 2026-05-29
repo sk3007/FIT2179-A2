@@ -77,7 +77,18 @@
     {
       "data": {
         "values": [
-          {"Year": 2014, "Title": "After the 2014-2015 major floods", "text": ["Dengue infections remained high", "with peaks in 2015 and 2019 (major floods)", "reinforcing the link between extreme", "weather events and disease outbreaks."]}
+          {
+            "Year": 2014, 
+            "Title": "After the 2014-2015 major floods", 
+            "text": 
+              [
+                "Dengue infections remained high,",
+                "with peaks in 2015 and 2019.",
+                "Increased rainfall may support",
+                "mosquito breeding, raising outbreak",
+                "risk and healthcare demand."
+              ]
+          }
         ]
       },
       "layer": [
@@ -88,7 +99,8 @@
                 "baseline": "bottom",
                 "dx": -270,
                 "dy": -115,
-                "fontWeight": "bold"
+                "fontWeight": "bold",
+                "fontSize": 15
             },
             "encoding": {
                 "x": {"field": "Year", "type": "ordinal"},
