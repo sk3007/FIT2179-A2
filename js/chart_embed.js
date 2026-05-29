@@ -5,11 +5,11 @@ const globalEmbedOptions = {
     font: "Times New Roman, serif",
 
     title: {
-      fontSize: 20,
+      fontSize: 24,
       fontWeight: "bold",
       color: "#333333",
       anchor: "start",
-      subtitleFontSize: 14,
+      subtitleFontSize: 16,
       offset: 20
     },
 
@@ -60,15 +60,15 @@ const charts = [
   { id: "#chart8", path: "charts/chart8.vg.json" },
   { id: "#chart9", path: "charts/chart9.vg.json" },
   { id: "#chart10", path: "charts/chart10.vg.json" },
-  { id: "#chart12", path: "charts/chart12.vg.json" },
+  { id: "#chart12", path: "charts/chart12(1).vg.json" },
   { id: "#chart13", path: "charts/chart13.vg.json" },
   { id: "#chart14", path: "charts/chart14.vg.json" }
 ];
 
 function getResponsiveFacetLayout(container) {
-  const containerWidth = container.clientWidth;
+  const containerWidth = container.getBoundingClientRect().width;
   // 1. Read the actual CSS height of the container
-  const containerHeight = container.clientHeight; 
+  const containerHeight = container.getBoundingClientRect().height;
 
   let columns;
 
@@ -98,7 +98,7 @@ function getResponsiveFacetLayout(container) {
   const rows = Math.ceil(totalMaps / columns);
 
   // Reserve vertical space for the main title, facet headers, and margins
-  const verticalReserve = 100; 
+  const verticalReserve = 150; 
   const availableHeight = containerHeight - verticalReserve;
 
   // Calculate cell height dynamically based on available vertical container space
