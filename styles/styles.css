@@ -192,7 +192,7 @@ body {
 }
 
 .row-xxl {
-  height: 900px;
+  height: 850px;
 }
 
 /* ============================================================ */
@@ -334,13 +334,14 @@ body {
 }
 
 .chart-caption--side {
-  flex: 0 0 180px;
+  flex: 0 0 190px;
   margin-top: 0;
   padding-top: 0;
   padding-left: var(--spacing-sm);
   border-top: none;
   border-left: 2px solid var(--color-divider);
   align-self: center;
+  /* text-align: justify; */
 }
 
 
@@ -374,7 +375,7 @@ body {
 
 .tm-title {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--color-text);
   line-height: 1.25;
