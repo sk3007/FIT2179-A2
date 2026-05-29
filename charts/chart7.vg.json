@@ -43,20 +43,6 @@
       {
         "data": {
           "url": "data/output (3).topojson",
-          "format": {"type": "topojson", "feature": "mys_admin2"}
-        },
-        "mark": {"type": "geoshape", "fill": "none", "stroke": "#000000"}
-      },
-      {
-        "data": {
-          "url": "data/output (3).topojson",
-          "format": {"type": "topojson", "feature": "mys_adminlines"}
-        },
-        "mark": {"type": "geoshape", "fill": "none", "stroke": "#000000"}
-      },
-      {
-        "data": {
-          "url": "data/output (3).topojson",
           "format": {"type": "topojson", "feature": "selection"}
         },
         "mark": {"type": "geoshape", "fill": "#e8e8e8", "stroke": "white"}
