@@ -334,7 +334,7 @@ body {
 }
 
 .chart-caption--side {
-  flex: 0 0 220px;
+  flex: 0 0 180px;
   margin-top: 0;
   padding-top: 0;
   padding-left: var(--spacing-sm);
