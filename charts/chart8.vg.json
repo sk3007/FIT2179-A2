@@ -22,7 +22,8 @@
           "type": "quantitative",
           "axis": {
             "format": "d",
-            "title": "Year"
+            "title": "Year",
+            "grid": true
           },
           "scale": {
             "zero": false,
