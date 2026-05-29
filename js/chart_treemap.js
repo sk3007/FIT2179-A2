@@ -10,12 +10,12 @@
   /* ---------- colour palette per top-level sector ---------- */
   /* Updated to be color-blind friendly. No red or green. */
   const SECTOR_COLOURS = {
-    'Agriculture':          '#008080', /* Teal instead of green */
-    'Mining and quarrying': '#b06000', /* Dark orange/brown */
-    'Manufacturing':        '#457b9d', /* Blue */
-    'Construction':         '#6a4c93', /* Purple instead of red */
-    'Services':             '#3d405b', /* Slate/Dark Blue */
-    'plus Import duties':   '#8ecae6', /* Light Blue instead of green */
+    'Agriculture':          '#8fdfa1', /* Teal instead of green */
+    'Mining and quarrying': '#907555', /* Dark orange/brown */
+    'Manufacturing':        '#9486cf', /* Blue */
+    'Construction':         '#8aa3f0', /* Purple instead of red */
+    'Services':             '#b4dcf3', /* Slate/Dark Blue */
+    'plus Import duties':   '#a9aaaa', /* Light Blue instead of green */
   };
 
   /* ---------- parse CSV text into an array of objects ---------- */
@@ -33,49 +33,63 @@
   }
 
   /* ---------- build Highcharts data array for one year ---------- */
+/* ---------- build Highcharts data array for one year ---------- */
   function buildSeriesData(rows, year) {
-  const yearRows = rows.filter(r => r.year === year);
-  const data = [];
+    const yearRows = rows.filter(r => r.year === year);
+    const data = [];
 
-  // Calculate total GDP manually for level 1 percentage labels
-  const totalGDP = yearRows
-    .filter(r => r.level === 1)
-    .reduce((sum, r) => sum + r.value, 0);
+    // Calculate total GDP manually for level 1 percentage labels
+    const totalGDP = yearRows
+      .filter(r => r.level === 1)
+      .reduce((sum, r) => sum + r.value, 0);
 
-  yearRows.forEach(r => {
-    if (r.level === 1) {
-      data.push({
-        id: r.code,
-        name: r.name,
-        parent: '', // level 1 sectors are now the top layer
-        value: r.value,
-        color: SECTOR_COLOURS[r.name] || '#94a3b8',
-        totalGDP: totalGDP
-      });
-    } else if (r.level === 2) {
-      data.push({
-        id: r.code,
-        name: r.name,
-        parent: r.code.split('.')[0],
-        value: r.value,
-        color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
-                         .brighten(0.15).get(),
-      });
-    } else if (r.level === 3) {
-      const parentCode = r.code.split('.').slice(0, -1).join('.');
-      data.push({
-        id: r.code,
-        name: r.name,
-        parent: parentCode,
-        value: r.value,
-        color: Highcharts.color(SECTOR_COLOURS[r.parent] || '#94a3b8')
-                         .brighten(0.3).get(),
-      });
-    }
-  });
+    // Create a quick lookup map of code -> name for level 1 sectors
+    const rootSectorMap = {};
+    yearRows.forEach(r => {
+      if (r.level === 1) {
+        rootSectorMap[r.code] = r.name;
+      }
+    });
 
-  return data;
-}
+    yearRows.forEach(r => {
+      // Find the top-level sector code by taking the first element before the dot
+      const rootCode = r.code.split('.')[0];
+      const rootName = rootSectorMap[rootCode] || '';
+      const baseColor = SECTOR_COLOURS[rootName] || '#94a3b8';
+
+      if (r.level === 1) {
+        data.push({
+          id: r.code,
+          name: r.name,
+          parent: '', 
+          value: r.value,
+          color: baseColor,
+          totalGDP: totalGDP
+        });
+      } else if (r.level === 2) {
+        data.push({
+          id: r.code,
+          name: r.name,
+          parent: rootCode,
+          value: r.value,
+          // Give all sub-items a standard, uniform brightness bump
+          color: Highcharts.color(baseColor).brighten(0.18).get(),
+        });
+      } else if (r.level === 3) {
+        const parentCode = r.code.split('.').slice(0, -1).join('.');
+        data.push({
+          id: r.code,
+          name: r.name,
+          parent: parentCode,
+          value: r.value,
+          // Level 3 gets the exact same brightness as Level 2
+          color: Highcharts.color(baseColor).brighten(0.18).get(),
+        });
+      }
+    });
+
+    return data;
+  }
 
   /* ---------- format RM value for tooltip ---------- */
   function fmtRM(v) {
@@ -214,59 +228,62 @@
             animationLimit: 1000,
             dataLabels: { enabled: false },
             levelIsConstant: false,
-            levels: [
-              {
-                level: 1,
-                dataLabels: {
-                  enabled: true,
-                  headers: true,
-                  crop: true,
-                  overflow: 'hidden',
-                  allowOverlap: false,
-                  formatter: function () {
-                    const total = this.series.points
-                      .filter(p => p.node && p.node.level === 1)
-                      .reduce((sum, p) => sum + (p.value || 0), 0);
+            
+          levels: [
+  {
+    level: 1,
+    dataLabels: {
+      enabled: true,
+      headers: true,
+      crop: true,
+      overflow: 'hidden',
+      allowOverlap: false,
+      formatter: function () {
+        const total = this.series.points
+          .filter(p => p.node && p.node.level === 1)
+          .reduce((sum, p) => sum + (p.value || 0), 0);
 
-                    const pct = total ? (this.point.value / total * 100).toFixed(1) : 0;
-                    return this.point.name + ' (' + pct + '%)';
-                  },
-                  style: {
-                    fontSize: '15px',
-                    fontWeight: '700',
-                    color: '#000000',
-                    textOutline: 'none'
-                  },
-                },
-                borderWidth: 2,
-                borderColor: '#ffffff',
-              },
-              {
-                level: 2,
-                dataLabels: { 
-                  enabled: true, 
-                  crop: true,
-                  overflow: 'hidden',
-                  allowOverlap: false,
-                  formatter: function () {
-                    const parentNode = this.point.node.parent;
-                    const parentValue = parentNode && parentNode.childrenTotal;
-                    if (!parentValue) return this.point.name;
-                    const pct = (this.point.value / parentValue * 100).toFixed(1);
-                    return this.point.name + ' (' + pct + '%)';
-                  },
-                  style: { fontSize: '11px', fontWeight: '400', color: '#ffffff', textOutline: 'none' } 
-                },
-                borderWidth: 1,
-                borderColor: '#ffffff',
-              },
-              {
-                level: 3,
-                dataLabels: { enabled: false },
-                borderWidth: 0.5,
-                borderColor: '#ffffff',
-              },
-            ],
+        const pct = total ? (this.point.value / total * 100).toFixed(1) : 0;
+        return this.point.name + ' (' + pct + '%)';
+      },
+      style: { fontSize: '15px', fontWeight: '700', color: '#000000', textOutline: 'none' },
+    },
+    borderWidth: 2,
+    borderColor: '#474646',
+  },
+  {
+    level: 2,
+    dataLabels: { 
+      enabled: true, 
+      crop: true,
+      overflow: 'hidden',
+      allowOverlap: false,
+      formatter: function () {
+        const parentNode = this.point.node.parent;
+        const parentValue = parentNode && parentNode.childrenTotal;
+        if (!parentValue) return this.point.name;
+        const pct = (this.point.value / parentValue * 100).toFixed(1);
+        return this.point.name + ' (' + pct + '%)';
+      },
+      style: { fontSize: '11px', fontWeight: '400', color: '#000000', textOutline: 'none' } 
+    },
+    borderWidth: 1,
+    borderColor: '#474646',
+  },
+  {
+    level: 3,
+    // Changed enabled to true so nested elements retain legible textual parsing
+    dataLabels: { 
+      enabled: false,
+      crop: true,
+      overflow: 'hidden',
+      style: { fontSize: '10px', fontWeight: '400', color: '#333333', textOutline: 'none' }
+    },
+    borderWidth: 0.5,
+    borderColor: '#474646',
+  },
+],
+
             data: buildSeriesData(rows, years[0]),
           }],
 

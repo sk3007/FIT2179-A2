@@ -23,57 +23,114 @@
       "as": ["Decade", "Anomaly"]
     }
   ],
-  "mark": {
-    "type": "rect",
-    "tooltip": true,
-    "stroke": "white",
-    "strokeWidth": 0.5
-  },
-  "encoding": {
-    "x": {
-      "field": "Decade",
-      "type": "ordinal",
-      "title": "Decade",
-      "sort": [
-        "1950-1960",
-        "1960-1970",
-        "1970-1980",
-        "1980-1990",
-        "1990-2000",
-        "2000-2010",
-        "2010-2020"
-      ],
-      "axis": {"labelAngle": -45}
-    },
-    "y": {
-      "field": "Month",
-      "type": "ordinal",
-      "title": "Month",
-      "sort": [
-        "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
-        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-      ]
-    },
-    "color": {
-      "field": "Anomaly",
-      "type": "quantitative",
-      "title": "Number of Days",
-      "scale": {
-        "scheme": "redyellowblue",
-        "reverse": true,
-        "domainMid": 0
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "tooltip": true,
+        "stroke": "white",
+        "strokeWidth": 0.5
       },
-      "legend": {
-        "direction": "vertical",
-        "gradientLength": 300
+      "encoding": {
+        "x": {
+          "field": "Decade",
+          "type": "ordinal",
+          "title": "Decade",
+          "sort": [
+            "1950-1960",
+            "1960-1970",
+            "1970-1980",
+            "1980-1990",
+            "1990-2000",
+            "2000-2010",
+            "2010-2020"
+          ],
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "Month",
+          "type": "ordinal",
+          "title": "Month",
+          "sort": [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+          ]
+        },
+        "color": {
+          "field": "Anomaly",
+          "type": "quantitative",
+          "title": "Number of Days",
+          "scale": {
+            "scheme": "redgrey",
+            "reverse": true,
+            "domainMid": 0
+          },
+          "legend": {
+            "direction": "vertical",
+            "gradientLength": 300
+          }
+        },
+        "tooltip": [
+          {"field": "Decade", "type": "nominal"},
+          {"field": "Month", "type": "nominal"},
+          {"field": "Anomaly", "type": "quantitative", "format": ".2f", "title": "Anomaly (°C)"}
+        ]
       }
     },
-    "tooltip": [
-      {"field": "Decade", "type": "nominal"},
-      {"field": "Month", "type": "nominal"},
-      {"field": "Anomaly", "type": "quantitative", "format": ".2f", "title": "Anomaly (°C)"}
-    ]
-  },
+
+    {
+      "data": {
+        "values": [
+          {
+            "Decade": "1980-1990",
+            "Month": "Jun",
+            "label": "← Peak Inter-monsoon Heat (AMJ) →"
+          },
+          {
+            "Decade": "1980-1990",
+            "Month": "Sep",
+            "label": "← Southwest Monsoon Stability (J-D) →"
+          },
+          {
+            "Decade": "2010-2020",
+            "Month": "Jan",
+            "label": "Warmest\nDecade",
+            "boxWidth": 20
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "x": {
+          "field": "Decade", 
+          "type": "ordinal",
+          "sort": [
+            "1950-1960",
+            "1960-1970",
+            "1970-1980",
+            "1980-1990",
+            "1990-2000",
+            "2000-2010",
+            "2010-2020"
+          ]
+        },
+        "y": {
+          "field": "Month", 
+          "type": "ordinal",
+          "sort": [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+          ]
+        },
+        "text": {"field": "label", "type": "nominal"}
+      }
+    }
+  ],
   "config": {
     "axis": {
       "grid": false,

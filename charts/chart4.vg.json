@@ -58,7 +58,30 @@
           "field": "Gas_Type",
           "title": "Pollutant Gas",
           "scale": {
-            "scheme": "tableau20"
+            "domain": [
+                  "Ammonia",
+                  "Black carbon",
+                  "Carbon monoxide",
+                  "Methane",
+                  "Nitrogen oxides",
+                  "Nitrous oxide",
+                  "Non-methane hydrocarbons",
+                  "Organic carbon",
+                  "Sulfur dioxide",
+                  "Fine particulate matter"
+                ],
+                "range": [
+                  "#4ED0E1", 
+                  "#2C302E", 
+                  "#e67a7a", 
+                  "#0288D1", 
+                  "#E65100", 
+                  "#9C27B0", 
+                  "#6D4C41", 
+                  "#8D6E63", 
+                  "#f7e672", 
+                  "#90A4AE"
+                ]
           },
           "legend": {
             "orient": "top-left"
@@ -134,7 +157,7 @@
         "type": "text",
         "align": "left",
         "baseline": "bottom",
-        "dx": -275,
+        "dx": -293,
         "dy": -160,
         "fontWeight": "bold"
       },
@@ -154,6 +177,7 @@
         "type": "text",
         "align": "left",
         "baseline": "bottom",
+        "color": "#000000",
         "dx": 5,
         "dy": -45
       },

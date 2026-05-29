@@ -277,7 +277,7 @@ body {
   background: var(--color-surface);
   border-top: 1px solid var(--color-divider);
   padding: var(--spacing-md) 0;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-xs);
   font-size: 0.78rem;
   color: var(--color-text-muted);
   line-height: 1.7;

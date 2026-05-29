@@ -15,8 +15,8 @@
       },
       "mark": {
         "type": "rect",
-        "color": "#c0392b",
-        "opacity": 0.1
+        "color": "#fceb68",
+        "opacity": 0.3
       },
       "encoding": {
         "x": {

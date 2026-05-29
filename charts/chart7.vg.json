@@ -48,7 +48,7 @@
         "mark": {"type": "geoshape", "fill": "#e8e8e8", "stroke": "white"}
       },
       {
-        "mark": {"type": "circle", "opacity": 0.6},
+        "mark": {"type": "circle", "opacity": 0.5, "stroke": "#333333", "strokeWidth": 1},
         "encoding": {
           "longitude": {"field": "Longtitude", "type": "quantitative"},
           "latitude": {"field": "Latitude", "type": "quantitative"},
@@ -59,7 +59,7 @@
             "scale": {"type": "linear", "range": [5, 2000]},
             "title": "People Displaced"
           },
-          "color": {"value": "#5290b9"},
+          "color": {"value": "#05b1eb"},
           "tooltip": [
             {"field": "locality", "title": "Locality"},
             {"field": "Displacements", "title": "Displaced"}

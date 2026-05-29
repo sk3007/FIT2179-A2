@@ -75,8 +75,8 @@
                   "Non-Renewable"
                 ],
                 "range": [
-                  "#2ca25f",
-                  "#de2d26"
+                  "#1feb00",
+                  "#4d2707"
                 ]
               },
               "legend": {
@@ -151,7 +151,7 @@
           "filled": true,
           "size": 45
         },
-        "color": "#238b45",
+        "color": "#020804",
         "strokeWidth": 2.5
       },
       "encoding": {
@@ -281,11 +281,11 @@
               "Solar"
             ],
             "range": [
-              "#3182bd",
-              "#31a354",
-              "#74c476",
-              "#a1d99b",
-              "#fdae6b"
+              "#5fafde",
+              "#d4cb6e",
+              "#a12f02",
+              "#a7f2e4",
+              "#e66520"
             ]
           },
           "legend": {

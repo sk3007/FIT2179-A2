@@ -30,7 +30,7 @@
         "color": {
           "field": "Crop Yield (Tonnes)",
           "type": "quantitative",
-          "scale": { "scheme": "greens" },
+          "scale": { "scheme": "greens"},
           "title": null,
           "legend": {
             "title" : ["Crop Yield", "(Tons/Hectare)"],
@@ -75,7 +75,7 @@
         "values": [
           {
             "start_x": 188,   
-            "start_y": 71,   
+            "start_y": 68,   
             "end_x": 115,     
             "end_y": 50      
           }
@@ -84,7 +84,7 @@
       "mark": {
         "type": "rule",
         "color": "black",
-        "strokeWidth": 1.5
+        "strokeWidth": 0.7
       },
       "encoding": {
         "x": {"field": "start_x", "type": "quantitative"},
@@ -137,7 +137,7 @@
         "values": [
           {
             "start_x": 242,   
-            "start_y": 118,   
+            "start_y": 120,   
             "end_x": 220,     
             "end_y": 47      
           }
@@ -146,7 +146,7 @@
       "mark": {
         "type": "rule",
         "color": "black",
-        "strokeWidth": 1.5
+        "strokeWidth": 0.7
       },
       "encoding": {
         "x": {"field": "start_x", "type": "quantitative"},
@@ -231,6 +231,58 @@
             }
         }
       ]
+    },
+
+    {
+      "data": {
+        "values": [
+          {
+            "y_start": 68,
+            "y_end": 100,
+            "x_start": 168,
+            "x_end": 215
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fillOpacity": 0,
+        "stroke": "#000000",
+        "strokeWidth": 0.7,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "x": {"field": "x_start", "type": "quantitative"},
+        "x2": {"field": "x_end"},
+        "y": {"field": "y_start", "type": "quantitative"},
+        "y2": {"field": "y_end"}
+      }
+    },
+
+        {
+      "data": {
+        "values": [
+          {
+            "y_start": 120,
+            "y_end": 136,
+            "x_start": 203,
+            "x_end": 250
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fillOpacity": 0,
+        "stroke": "#000000",
+        "strokeWidth": 0.7,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "x": {"field": "x_start", "type": "quantitative"},
+        "x2": {"field": "x_end"},
+        "y": {"field": "y_start", "type": "quantitative"},
+        "y2": {"field": "y_end"}
+      }
     }
   ]
 }
