@@ -31,8 +31,11 @@
         "color": {
           "field": "Growth Metric",
           "type": "nominal",
-          "scale": {"range": ["#1f77b4", "#ff7f0e"]},
-          "legend": {"orient": "right", "title": "Growth Metrics"}
+          "scale": {
+            "domain": ["Increase in National GDP", "Increase in CO2 emissions"],
+            "range": ["#2850bf", "#5c5955"] 
+          },
+          "legend": {"orient": "top-left", "title": "Growth Metrics"}
         },
         "tooltip": [
           {"field": "Year", "type": "temporal"},
@@ -41,14 +44,14 @@
         ]
       }
     },
-
     {
       "data": {
         "values": [
           {
-            "Year": "2001-01-01",
+            "Year": "1997-06-01",
+            "Title": "2002:",
             "Annotation": [
-              "2002: GDP and emissions",
+              "GDP and emissions",
               "rise together, signalling",
               "that prosperity came with",
               "a climate cost."
@@ -56,47 +59,61 @@
             "yPosition": 300
           },
           {
-            "Year": "2016-06-01",
+            "Year": "2014-06-01",
+            "Title": "2020:",
             "Annotation": [
-              "2020: GDP and emissions",
+              "GDP and emissions",
               "both dropped as COVID-19",
               "disrupted economic activity."
             ],
-            "yPosition": 490
+            "yPosition": 495
           },
           {
-            "Year": "2020-06-01",
+            "Year": "2019-01-01",
+            "Title": "2023:",
             "Annotation": [
-              "2023: GDP continued rising,",
+              "GDP continued rising,",
               "while emissions dropped,",
               "suggesting early decoupling",
-              "from carbon-intensive growth."
+              "from carbon-intensive",
+              "growth as a result of",
+              "COP28."
             ],
-            "yPosition": 360
+            "yPosition": 320
           }
         ]
       },
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "top",
-        "color": "#374151"
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "temporal"
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "color": "#374151",
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "y": {"field": "yPosition", "type": "quantitative"},
+            "text": {"field": "Title"}
+          }
         },
-        "y": {
-          "field": "yPosition",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "Annotation"
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "color": "#374151",
+            "dy": 15 
+          },
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "y": {"field": "yPosition", "type": "quantitative"},
+            "text": {"field": "Annotation"}
+          }
         }
-      }
+      ]
     },
-
     {
       "data": {
         "values": [
