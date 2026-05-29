@@ -1,16 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Malaysia Renewable Energy Production and Power Station Growth",
-    "subtitle": "Brush the renewable energy timeline to filter stations by year built; lower chart shows renewable production mix"
+    "text": "Malaysia Renewable Energy Production and Power Station Growth"
   },
-
   "autosize": {
     "type": "fit-x",
     "contains": "padding",
     "resize": true
   },
-
   "vconcat": [
     {
       "width": "container",
@@ -221,9 +218,13 @@
             "Renewables - Solar"
           ],
           "as": [
-            "Renewable_Type",
+            "Renewable_Type_Raw",
             "Energy_Value"
           ]
+        },
+        {
+          "calculate": "replace(datum.Renewable_Type_Raw, 'Renewables - ', '')",
+          "as": "Renewable_Type"
         },
         {
           "filter": {
@@ -243,7 +244,9 @@
           "scale": {
             "domain": {
               "param": "year_brush"
-            }
+            },
+            "zero": false,
+            "nice": false
           },
           "axis": {
             "format": "d",
@@ -260,6 +263,9 @@
           "title": "Production (MW)",
           "axis": {
             "format": ",.0f"
+          },
+          "scale": {
+            "domain": [0, 4000]
           }
         },
         "color": {
@@ -268,11 +274,11 @@
           "title": "Renewable Source",
           "scale": {
             "domain": [
-              "Renewables - Hydro Power",
-              "Renewables - Biodiesel",
-              "Renewables - Biomass",
-              "Renewables - Biogas",
-              "Renewables - Solar"
+              "Hydro Power",
+              "Biodiesel",
+              "Biomass",
+              "Biogas",
+              "Solar"
             ],
             "range": [
               "#3182bd",
@@ -286,7 +292,7 @@
             "orient": "bottom",
             "direction": "horizontal"
           }
-        },
+            },
         "tooltip": [
           {
             "field": "Year",
@@ -302,7 +308,7 @@
           {
             "field": "Energy_Value",
             "type": "quantitative",
-            "title": "Production",
+            "title": "Production (MW)",
             "format": ",.0f"
           }
         ]
