@@ -17,7 +17,8 @@ const globalEmbedOptions = {
       labelFont: "Arial, sans-serif",
       titleFont: "Arial, sans-serif",
       titleFontSize: 15,
-      labelFontSize: 13
+      labelFontSize: 13,
+      gridWidth: 0.5
     },
 
     legend: {
